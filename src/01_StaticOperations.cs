@@ -7,7 +7,7 @@ namespace DemoLib
     //declare enum on toplevel. doesn't work nested in a class yet!
     public enum DemoEnum { Foo, Bar };
 
-    //The name of a static class will not show up anywhere in VL. 
+    //The name of a static class will show up as a category in VL
     public static class SomeStaticVLNodes
     { 
         //a simple static operation
@@ -69,8 +69,10 @@ namespace DemoLib
         {
             return a*2;
         }
-        
-        //ref is ignored and the parameter is treated as a normal one
+
+        //you can use ref parameters, but
+        //beware: assigning the parameter leads to undefined behavior in VL (for now)
+        //so only make use of it in a readonly fashion
         public static int RefParams(ref int firstInput)
         {
             return firstInput + 4444;
