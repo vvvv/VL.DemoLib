@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Version="0.55">
+  <p:Info Authors="vvvv group">
+    <p:LicenseUrl>https://www.gnu.org/licenses/lgpl.html</p:LicenseUrl>
+    <p:ProjectUrl>http://vvvv.org/</p:ProjectUrl>
+  </p:Info>
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
+  <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
+  <NugetDependency Id="Q18ZLENm9gzPhBnFnztPMP" Location="VL.Core" Version="0.35.21" />
+  <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
+    <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.Value">
+      <!--
+
+    ************************ VLDemoLib ************************
+
+-->
+      <Node Name="VLDemoLib" Bounds="153,200" Id="TSttkfeJHQSN5gkEF54G9o">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Patch" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:Info Summary="Basic stateful template with one in/out" Remarks="" Tags="vl" />
+        <Patch Id="CzjSvRY5dvXQDxmAOA8mZj">
+          <Patch Id="ESJZDDS0I02LAWDOx9RJVV" Name="Create" ParticipatingElements="CSXTDzFhLxULZjU3eSayxk,TOOfak0Aic1PMr7UqhV3Be" />
+          <Patch Id="OkqGvJfa3PDOppp4PFQghD" Name="Update" />
+          <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi">
+            <Node Bounds="549,211,47,13" Id="RqPIlcY2qQzLm4k3QWrWP5">
+              <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
+                <Choice Kind="OperationCallFlag" Name="Defaults" />
+                <AssemblyReference ID="VLDemoLib" />
+              </p:NodeReference>
+              <Pin Id="OWQsBxKScGuLQOVPKMxcJZ" Name="First Input" Kind="InputPin" />
+              <Pin Id="K7mHNQlp5bPL6ArVFP5gSt" Name="Second Input" Kind="InputPin" />
+              <Pin Id="Ap8g1IJ9hYLN6BfVv9NeQJ" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="CQRJkPlJsIHNALQiyNXmir" Comment="Second Input" Bounds="609,195,33,19" ShowValueBox="true" isIOBox="true" Value="0.44">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="K1Nky6P5jWAQXdSu6sSFF4" Comment="First Input" Bounds="467,178,39,19" ShowValueBox="true" isIOBox="true" Value="44.0">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="512,362,44,13" Id="JxqJ9uZMUkSLPpPX54dzyB">
+              <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Generic" />
+                <AssemblyReference ID="VLDemoLib" />
+              </p:NodeReference>
+              <Pin Id="Kmu3TSVdhy5LGK3OmBOy6H" Name="Input" Kind="InputPin" />
+              <Pin Id="TXVSYcjzZcHN11WY1yHy1s" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="PcC3RLrj4i4OG1Bk2aWJfh" Bounds="512,332,33,19" ShowValueBox="true" isIOBox="true" Value="0.25">
+              <p:ValueBoxSettings />
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="144,619,84,13" Id="L5QiJrIqekIOPQkItl4ApN">
+              <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
+                <Choice Kind="OperationCallFlag" Name="MultipleOutputs" />
+                <AssemblyReference ID="VLDemoLib" />
+              </p:NodeReference>
+              <Pin Id="UrsB5EcDAmzOAfM3g0R0FQ" Name="First Input" Kind="InputPin" />
+              <Pin Id="VmTMH2ykIRIPZccqj0L09J" Name="Second Input" Kind="InputPin" />
+              <Pin Id="G8K2z7movc9L4m4pPQxhjS" Name="Added" Kind="OutputPin" />
+              <Pin Id="AIYnnvTE3UiNbqora0llRM" Name="Multiplied" Kind="OutputPin" />
+            </Node>
+            <Pad Id="BHZwkTzC7nuMw2uhojx5lQ" Comment="First Input" Bounds="151,582,33,19" ShowValueBox="true" isIOBox="true" Value="0.57">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="E9yYYJBc6FfNKHTbKZmvDY" Comment="Second Input" Bounds="273,579,33,19" ShowValueBox="true" isIOBox="true" Value="0.61">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="LTp7cTIOfK2LGumn8hK3kY" Comment="Multiplied" Bounds="254,677,33,19" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="FpFXgf7uVARN1s2kKeMKb8" Comment="Added" Bounds="146,675,33,19" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="143,225,62,13" Id="QWZUDutKcFbPWWPbVQJt6E">
+              <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
+                <Choice Kind="OperationCallFlag" Name="MyAddition" />
+                <AssemblyReference ID="VLDemoLib" />
+              </p:NodeReference>
+              <Pin Id="Vn9YtI901xmPQ3sylSVTAL" Name="Input" Kind="InputPin" />
+              <Pin Id="JGjwyKwCPUFP6yYHw9zqPD" Name="Input 2" Kind="InputPin" />
+              <Pin Id="HKKxqMQv43QLS1huH9kisx" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="152,473,54,13" Id="VnhqWczcoBVOrrJm11MMG3">
+              <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
+                <Choice Kind="OperationCallFlag" Name="PinNames" />
+                <AssemblyReference ID="VLDemoLib" />
+              </p:NodeReference>
+              <Pin Id="OEAEdZVhZ74OpLO8tcW2rp" Name="First Input" Kind="InputPin" />
+              <Pin Id="SL7uX7RsdshPxWYQpPGRmn" Name="Second Input" Kind="InputPin" />
+              <Pin Id="RMLKLLj8A0HOXE0gGxoIh8" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="VLb3YTA6jvLNR48UhF5WpG" Comment="" Bounds="132,191,33,19" ShowValueBox="true" isIOBox="true" Value="0.01">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="Rjg0cBj50yWMIGZx3VIJqi" Comment="" Bounds="207,192,33,19" ShowValueBox="true" isIOBox="true" Value="0.45">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="521,823,79,13" Id="GyJmdTAagf4PSp5q3oHcQt">
+              <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
+                <Choice Kind="OperationCallFlag" Name="HTMLDocuTest" />
+                <AssemblyReference ID="VLDemoLib" />
+              </p:NodeReference>
+              <Pin Id="C6rTMfcNkLRNZIJk3s5mTh" Name="A" Kind="InputPin" />
+              <Pin Id="VDfZNrbeSgmLgckxGUrYkI" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="149,812,57,13" Id="OKGfWiddHSuLIb3Nfj9aET">
+              <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
+                <Choice Kind="OperationCallFlag" Name="RefParams" />
+                <AssemblyReference ID="VLDemoLib" />
+              </p:NodeReference>
+              <Pin Id="OZTpLoha1pLPZZ2Dp924Kl" Name="First Input" Kind="InputPin" />
+              <Pin Id="TJ9rzsx0XXwPeOIFfBEuHe" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="JGQIHunzd1gNNULuhPriMZ" Comment="First Input" Bounds="145,775,24,19" ShowValueBox="true" isIOBox="true" Value="18">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="PODQ7IHZlBLNabanVpDBuh" Comment="" Bounds="141,860,36,19" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="513,571,89,13" Id="Qkv01stsIpKLpVqXXHK58X">
+              <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
+                <Choice Kind="OperationCallFlag" Name="ReverseSequence" />
+                <AssemblyReference ID="VLDemoLib" />
+              </p:NodeReference>
+              <Pin Id="LHoMPN4XEaGNgN9IasGD8x" Name="Input" Kind="InputPin" />
+              <Pin Id="LHH4vwiUz2sL73YjP7dbT2" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="512,509,86,13" Id="BEPMSVxNztIM8uZx4XtE3d">
+              <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="LinearSpread" />
+              </p:NodeReference>
+              <Pin Id="GNQkr2cylSuLSKjF7jo2QA" Name="Center" Kind="InputPin" />
+              <Pin Id="SR70LzAX7j1Oh2wwyRIZAk" Name="Width" Kind="InputPin" />
+              <Pin Id="Abh3d2eLXqyMxbqRtRQoPO" Name="Count" Kind="InputPin" />
+              <Pin Id="ApKxIFVT3cPPXB6yZHylY7" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="DC7YaJJkP2lQTyrRVi917o" Comment="Count" Bounds="597,476,24,19" ShowValueBox="true" isIOBox="true" Value="23">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="JbZMNVhYtTIPQkyTRHuwSE" Comment="" Bounds="552,245,39,19" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="JMcqROi4CWIO0oDGqVMCi8" Comment="A" Bounds="488,803,24,21" ShowValueBox="true" isIOBox="true" Value="10">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="GhuchaOapCfMgEFZRCpbgd" Comment="" Bounds="523,856,24,21" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="142,334,62,13" Id="KaDXsJwnXoUL6EN9RK5ng2">
+              <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="MyAddition" />
+                <AssemblyReference ID="VLDemoLib" />
+                <PinReference Kind="InputPin" Name="Input 3" />
+              </p:NodeReference>
+              <Pin Id="Mmu8f1sdCRrMYdOjhLX74w" Name="Input" Kind="InputPin" />
+              <Pin Id="Lzl2ZL6bzonOWAf4DYdoDA" Name="Input 2" Kind="InputPin" />
+              <Pin Id="F5ofvXbC9zBMYQRE6fRp0o" Name="Input 3" Kind="InputPin" />
+              <Pin Id="DZ1LT0NMUgCPG58DErzmQX" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="DkZDVJKuFaUM2aDNzNIUzc" Comment="" Bounds="145,262,33,19" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="Tgn0ZlItp1PLLt9BCCbSs5" Comment="Result" Bounds="515,418,49,19" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="513,611,91,13" Id="MEIGcFpPvtpOsRoNnu5aEw">
+              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="FirstOrDefault" />
+              </p:NodeReference>
+              <Pin Id="Tiw8q3OweLqPzVRKMkrtf3" Name="Input" Kind="InputPin" />
+              <Pin Id="VZJNIR9JWhDM26aMknUD0h" Name="Default Value" Kind="InputPin" />
+              <Pin Id="CnLn7Vl1lKELYRhoE5Twuu" Name="Output" Kind="OutputPin" />
+              <Pin Id="PJGKu64rKwQK9V4Frgkpaa" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="HGQZm4KvfGqQAFWyV4B7Qj" Comment="Result" Bounds="601,647,33,19" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="542,540,91,13" Id="EZJR8AUKlqZMyt9xT4dBaR">
+              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="FirstOrDefault" />
+              </p:NodeReference>
+              <Pin Id="JVRDPOu6p6IMZFKV6j3JiH" Name="Input" Kind="InputPin" />
+              <Pin Id="SFnygWd361wOaLD6hcuqMZ" Name="Default Value" Kind="InputPin" />
+              <Pin Id="A5NtbUYOmDfP4NSnyRnDZa" Name="Output" Kind="OutputPin" />
+              <Pin Id="U5zqpCOu99fLVdM6PDp1mk" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="Jhi6QFNT70pLriYSPPx5St" Comment="Result" Bounds="630,576,38,19" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="836,355,53,22" Id="CSXTDzFhLxULZjU3eSayxk">
+              <p:NodeReference LastCategoryFullName="DemoLib.MyDataType" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="MyDataType" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+                <AssemblyReference ID="VLDemoLib" />
+              </p:NodeReference>
+              <Pin Id="BzLPnTWNEWIQBynrZ21mHt" Name="X" Kind="InputPin" />
+              <Pin Id="NptyzuSLMJiO7SrYv4BKyW" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="839,461,53,22" Id="Mgpw8Te7LrKMXieLzcsgUO">
+              <p:NodeReference LastCategoryFullName="DemoLib.MyDataType" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="MyDataType" />
+                <Choice Kind="OperationCallFlag" Name="Update" />
+                <AssemblyReference ID="VLDemoLib" />
+              </p:NodeReference>
+              <Pin Id="Nbgoza4exajPNhTQxemiul" Name="Input" Kind="StateInputPin" />
+              <Pin Id="DtFTJOCIC7ZOwdFxgG49D2" Name="Factor" Kind="InputPin" />
+              <Pin Id="Bru3Uv2uiAzL1I4XNByKal" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="HzxEoY6mTGUP1QCY9GHO1J" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="DTgWUH1RBmmNiTGJyPFPiD" Bounds="839,411">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="845,580,53,22" Id="PG9DxtGdPm9LYEtuxZkkIs">
+              <p:NodeReference LastCategoryFullName="DemoLib.MyDataType" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Another" />
+                <AssemblyReference ID="VLDemoLib" />
+              </p:NodeReference>
+              <Pin Id="VtFQ6p03YQbPLyhbiPUpFi" Name="Input" Kind="StateInputPin" />
+              <Pin Id="NYsIOc8ndiRO1bVixKg8ej" Name="Factor" Kind="InputPin" />
+              <Pin Id="CbIA73nMP2GQOe5wdgtq6A" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="BAeqp8GUutkMAVTnOgMJTj" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="Pwtlij7FEpiMNPHVMrLtVk" Comment="Factor" Bounds="913,436,33,19" ShowValueBox="true" isIOBox="true" Value="0.17">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="AHXU2aNOgNHLu9v7lpwNPv" Comment="Result" Bounds="924,504,33,19" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="R1QihiPoLKAQSAZOz9Mmp8" Comment="Factor" Bounds="921,555,33,19" ShowValueBox="true" isIOBox="true" Value="0.21">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="Mx3n6en0iXfQANydDOGogM" Comment="Result" Bounds="922,635,33,19" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="TrUYu0jxVVxOxqvD9pwVRp" Comment="X" Bounds="836,319,33,19" ShowValueBox="true" isIOBox="true" Value="2.0">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="R4X3CVbtmY7MpjoVxheWs1" Comment="First Input" Bounds="120,425,33,19" ShowValueBox="true" isIOBox="true" Value="0.0">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="RDsPDG1imUUN6jHt7riy4Q" Comment="Second Input" Bounds="240,425,33,19" ShowValueBox="true" isIOBox="true" Value="0.0">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="1126,353" Id="H8WqDQ65ptkMp66BVla55g">
+              <p:NodeReference LastCategoryFullName="DemoLib.DynamicEnumDemo" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="DynamicEnumDemo" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+                <AssemblyReference ID="VLDemoLib" />
+              </p:NodeReference>
+              <Pin Id="QQw14sYIcbGNL5M0WehSCl" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="M3jvXJHLc4UPpL2AvYCoxv" Bounds="1129,416" />
+            <Node Bounds="1128,457,82,22" Id="NEwZ6VivZLzNqPaXd4QfDo">
+              <p:NodeReference LastCategoryFullName="DemoLib.DynamicEnumDemo" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Update" />
+                <CategoryReference Kind="AssemblyCategory" Name="DynamicEnumDemo" NeedsToBeDirectParent="true" />
+                <AssemblyReference ID="VLDemoLib" />
+              </p:NodeReference>
+              <Pin Id="NXYIAyyldMuMU6nyKC0t4b" Name="Input" Kind="StateInputPin" />
+              <Pin Id="LJHfWzhLP0iMdBqoq8d2Pg" Name="Enum Input" Kind="InputPin" />
+              <Pin Id="A6aICtPiqQFMBEBjEmb8yY" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="O22wATbK4JzPtGOItkPr5N" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1143,637,82,22" Id="EbK7zEmi0F0QOOpNNgPwal">
+              <p:NodeReference LastCategoryFullName="DemoLib.DynamicEnumDemo" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="DynamicEnumDemo" />
+                <Choice Kind="OperationCallFlag" Name="AddEnumEntry" />
+                <AssemblyReference ID="VLDemoLib" />
+              </p:NodeReference>
+              <Pin Id="BVHA2UKcjhBL814Q4fKmJu" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Kx6qRtrCfGdNGWEw0e6l9s" Name="Entry" Kind="InputPin" />
+              <Pin Id="ONdf8dQM1xSLdJljBbnm5l" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="P0fSICV4pWFPJC8fF7KorZ" Name="Apply" Kind="ApplyPin" />
+            </Node>
+            <Pad Id="QNXqZsMrqWnLCynAKxsgoV" Comment="Entry" Bounds="1197,587,31,19" ShowValueBox="true" isIOBox="true" Value="&quot;ölkj&quot;">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="SxtJrs2DUk4PiiiHvC9yVb" Comment="Apply" Bounds="1289,622,40,19" ShowValueBox="true" isIOBox="true" Value="false">
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="1146,724,95,22" Id="SeJtithGE9sMXzg6iHavMw">
+              <p:NodeReference LastCategoryFullName="DemoLib.DynamicEnumDemo" LastSymbolSource="VLDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="DynamicEnumDemo" />
+                <AssemblyReference ID="VLDemoLib" />
+                <Choice Kind="OperationCallFlag" Name="RemoveEnumEntry" />
+              </p:NodeReference>
+              <Pin Id="NlQTkNDCegULFLdgIiSQnP" Name="Input" Kind="StateInputPin" />
+              <Pin Id="QGZNP7tLHsoPHSeEdBWhLO" Name="Entry" Kind="InputPin" />
+              <Pin Id="RtbesW7N7HaLUt9XDp03OM" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="P5NgBGHbawpNFJUzbrxxkx" Name="Apply" Kind="ApplyPin" />
+            </Node>
+            <Pad Id="QXfEAFW2dHYPfxMZz25aFI" Comment="Apply" Bounds="1285,700,40,19" ShowValueBox="true" isIOBox="true" Value="false">
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="LNXhPyPq15KMx0SbqLaWOf" Comment="Selected Enum Entry" Bounds="1205,511,69,7" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="RmjiJzzVOXZOpSdM36TQq7" Comment="Enum Input" Bounds="1228,428,67,19" ShowValueBox="true" isIOBox="true" Value="{&quot;FValue&quot;:&quot;kadabara&quot;}">
+              <p:TypeAnnotation LastCategoryFullName="VVVV.Value" LastSymbolSource="VL.DemoLib.vl">
+                <Choice Kind="TypeFlag" Name="MyEnum" />
+              </p:TypeAnnotation>
+            </Pad>
+          </Canvas>
+          <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
+            <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
+            <Fragment Id="PulIQZQ5YLtPp6C2yvbTNE" Patch="OkqGvJfa3PDOppp4PFQghD" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="SbPjKsTjrQkNDxPgriDAQ3" Ids="CQRJkPlJsIHNALQiyNXmir,K7mHNQlp5bPL6ArVFP5gSt" />
+          <Link Id="RsTjnnZjHibNXeUTKP1n7Y" Ids="K1Nky6P5jWAQXdSu6sSFF4,OWQsBxKScGuLQOVPKMxcJZ" />
+          <Link Id="Nv0H9xoRRWeOTxmEjSDc8V" Ids="PcC3RLrj4i4OG1Bk2aWJfh,Kmu3TSVdhy5LGK3OmBOy6H" />
+          <Link Id="Uuo402VLuy1MMAPtNbQSqw" Ids="BHZwkTzC7nuMw2uhojx5lQ,UrsB5EcDAmzOAfM3g0R0FQ" />
+          <Link Id="PI4YygZRxQfQZcFiq3EOL3" Ids="E9yYYJBc6FfNKHTbKZmvDY,VmTMH2ykIRIPZccqj0L09J" />
+          <Link Id="OGKGojJpMA3MN6bfPIYW77" Ids="AIYnnvTE3UiNbqora0llRM,LTp7cTIOfK2LGumn8hK3kY" />
+          <Link Id="HlvBEBYPB1HP6jseP7UP8f" Ids="G8K2z7movc9L4m4pPQxhjS,FpFXgf7uVARN1s2kKeMKb8" />
+          <Link Id="DKsGDVFQFd9NMcmYd1Asx4" Ids="VLb3YTA6jvLNR48UhF5WpG,Vn9YtI901xmPQ3sylSVTAL" />
+          <Link Id="S6cGCnIqw4uLK4sxHETgoQ" Ids="Rjg0cBj50yWMIGZx3VIJqi,JGjwyKwCPUFP6yYHw9zqPD" />
+          <Link Id="HndHo7v7ljFPwC3wf6o8IH" Ids="JGQIHunzd1gNNULuhPriMZ,OZTpLoha1pLPZZ2Dp924Kl" />
+          <Link Id="FImOGyRCF1fMJHLWsqZTSV" Ids="TJ9rzsx0XXwPeOIFfBEuHe,PODQ7IHZlBLNabanVpDBuh" />
+          <Link Id="GRsV36BrfhQM2ekPckOe3W" Ids="DC7YaJJkP2lQTyrRVi917o,Abh3d2eLXqyMxbqRtRQoPO" />
+          <Link Id="F5iduC4tL2tO4jvT8OOSIW" Ids="Ap8g1IJ9hYLN6BfVv9NeQJ,JbZMNVhYtTIPQkyTRHuwSE" />
+          <Link Id="VWzHGdL81iEN0G7KAhLtyi" Ids="JMcqROi4CWIO0oDGqVMCi8,C6rTMfcNkLRNZIJk3s5mTh" />
+          <Link Id="OkbEbvCSkulPBqLMK3vRz1" Ids="VDfZNrbeSgmLgckxGUrYkI,GhuchaOapCfMgEFZRCpbgd" />
+          <Link Id="NYXVvofDAyRNKCFh4NBVk4" Ids="HKKxqMQv43QLS1huH9kisx,DkZDVJKuFaUM2aDNzNIUzc" />
+          <Link Id="HVwRDARkK9pLJW3tWBNwdb" Ids="TXVSYcjzZcHN11WY1yHy1s,Tgn0ZlItp1PLLt9BCCbSs5" />
+          <Link Id="D7WFP1eRhcBQcNItqKUYwN" Ids="ApKxIFVT3cPPXB6yZHylY7,LHoMPN4XEaGNgN9IasGD8x" />
+          <Link Id="ScxnYPFIeloMcfphxujyH3" Ids="LHH4vwiUz2sL73YjP7dbT2,Tiw8q3OweLqPzVRKMkrtf3" />
+          <Link Id="LBxpOdDCtAWMHsGx63Dy6K" Ids="PJGKu64rKwQK9V4Frgkpaa,HGQZm4KvfGqQAFWyV4B7Qj" />
+          <Link Id="VXw8Zs6gWjZLLRiId2SWEr" Ids="U5zqpCOu99fLVdM6PDp1mk,Jhi6QFNT70pLriYSPPx5St" />
+          <Link Id="IZbkVnlAu5KPogpe5zOHjv" Ids="ApKxIFVT3cPPXB6yZHylY7,JVRDPOu6p6IMZFKV6j3JiH" />
+          <Link Id="MBaep2Zm5vlNrEiPRVM8Wm" Ids="NptyzuSLMJiO7SrYv4BKyW,DTgWUH1RBmmNiTGJyPFPiD" />
+          <Link Id="THV6IwNl3gIOdg2eTkndiK" Ids="DTgWUH1RBmmNiTGJyPFPiD,Nbgoza4exajPNhTQxemiul" />
+          <Link Id="JxxZihGhIUaMFeFpjHt4R2" Ids="Bru3Uv2uiAzL1I4XNByKal,VtFQ6p03YQbPLyhbiPUpFi" />
+          <Link Id="U7ktTlW2hakOr9hGRKGmgz" Ids="Pwtlij7FEpiMNPHVMrLtVk,DtFTJOCIC7ZOwdFxgG49D2" />
+          <Link Id="Jq2C6lw2SLsOUpSGPwIEgh" Ids="HzxEoY6mTGUP1QCY9GHO1J,AHXU2aNOgNHLu9v7lpwNPv" />
+          <Link Id="VxmiRukRxZ6OU9RDfCDd1z" Ids="R1QihiPoLKAQSAZOz9Mmp8,NYsIOc8ndiRO1bVixKg8ej" />
+          <Link Id="LTMFVAWPtHyPu52HaRUMPl" Ids="BAeqp8GUutkMAVTnOgMJTj,Mx3n6en0iXfQANydDOGogM" />
+          <Link Id="QdwezteoZVGNDcKhcRYyyJ" Ids="TrUYu0jxVVxOxqvD9pwVRp,BzLPnTWNEWIQBynrZ21mHt" />
+          <Link Id="EOJVsKcUAkoP1XqB1HV8fM" Ids="R4X3CVbtmY7MpjoVxheWs1,OEAEdZVhZ74OpLO8tcW2rp" />
+          <Link Id="RuiTrITS4WsNJCigqzhQWY" Ids="RDsPDG1imUUN6jHt7riy4Q,SL7uX7RsdshPxWYQpPGRmn" />
+          <Link Id="TOOfak0Aic1PMr7UqhV3Be" Ids="QQw14sYIcbGNL5M0WehSCl,M3jvXJHLc4UPpL2AvYCoxv" />
+          <Link Id="HVWpLuiuUDHMhRlquwZcrg" Ids="M3jvXJHLc4UPpL2AvYCoxv,NXYIAyyldMuMU6nyKC0t4b" />
+          <Link Id="RvOBOHesNapOba3neDEiEB" Ids="A6aICtPiqQFMBEBjEmb8yY,BVHA2UKcjhBL814Q4fKmJu" />
+          <Link Id="T1rc9Y1nwEwMKtkiznaOTr" Ids="QNXqZsMrqWnLCynAKxsgoV,Kx6qRtrCfGdNGWEw0e6l9s" />
+          <Link Id="UQWjEWBJmVPNtqBmmuvCe6" Ids="SxtJrs2DUk4PiiiHvC9yVb,P0fSICV4pWFPJC8fF7KorZ" />
+          <Link Id="FoNZ8qqJMjIP3N2H9hYoA5" Ids="ONdf8dQM1xSLdJljBbnm5l,NlQTkNDCegULFLdgIiSQnP" />
+          <Link Id="E5DrTbLuJACOkpodZQxWX5" Ids="QXfEAFW2dHYPfxMZz25aFI,P5NgBGHbawpNFJUzbrxxkx" />
+          <Link Id="QA7ODvsZP2mOEQQWK4WPEr" Ids="O22wATbK4JzPtGOItkPr5N,LNXhPyPq15KMx0SbqLaWOf" />
+          <Link Id="J0qVfNjazvYPLIZtCzNcGz" Ids="RmjiJzzVOXZOpSdM36TQq7,LJHfWzhLP0iMdBqoq8d2Pg" />
+          <Link Id="Op662zS4ZFpNVBeK4VcHSp" Ids="QNXqZsMrqWnLCynAKxsgoV,QGZNP7tLHsoPHSeEdBWhLO" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ MyEnum ************************
+
+-->
+      <Node Name="MyEnum" Bounds="448,246" Id="PZhn4gXOSe3Oc2I6H22fXo">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="DemoLib" LastSymbolSource="VLDemoLib.dll">
+          <AssemblyReference ID="VLDemoLib" />
+          <FullNameCategoryReference ID="DemoLib" />
+          <FullNameCategoryReference ID="DemoLib" />
+          <AssemblyReference ID="VLDemoLib" />
+          <Choice Kind="ClassType" Name="MyEnum" />
+        </p:TypeAnnotation>
+        <Patch Id="NPM7t7kKtRsLhYZ824BbX2">
+          <Canvas Id="CZdvw5IcMMpOlu3bH0vE54">
+            <!--
+
+    ************************ CreateDefault ************************
+
+-->
+            <Node Name="CreateDefault" Bounds="305,257,80,80" Id="BUSlMtwK5gTMZv7srFFqF3">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Patch Id="G9DBzJ9mfY5O79PCh01zLe">
+                <Node Name="Default" Bounds="324,292,42,13" ForwardPins="true" Id="Cac6mWuPu3aL7SZVcfQXqz">
+                  <p:NodeReference LastCategoryFullName="DemoLib.MyEnum" LastSymbolSource="VLDemoLib.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationNode" Name="Default" />
+                    <CategoryReference Kind="AssemblyCategory" Name="MyEnum" NeedsToBeDirectParent="true" />
+                    <AssemblyReference ID="VLDemoLib" />
+                  </p:NodeReference>
+                  <Pin Id="DphtLQXdRuQQPtHFxBRwGs" Name="Default" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+          </Canvas>
+          <ProcessDefinition Id="Kynwf6tQi5aOfzYQrTU7eP" IsHidden="true">
+            <Fragment Id="KHCCE6JIsKaNvUAhkQq6MG" Patch="BUSlMtwK5gTMZv7srFFqF3" Enabled="true" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+    </Canvas>
+  </Patch>
+  <PlatformDependency Id="GyRVwNjeHhKNsmsVBxSegj" Location="./src\bin\Debug\VLDemoLib.dll" />
+</Document>
