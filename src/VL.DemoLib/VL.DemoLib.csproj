@@ -7,7 +7,7 @@
     <ProjectGuid>{833D7209-1277-49E0-A4B2-4CFB5A734CD5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CodedLib</RootNamespace>
+    <RootNamespace>DemoLib</RootNamespace>
     <AssemblyName>VL.DemoLib</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

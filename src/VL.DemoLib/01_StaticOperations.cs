@@ -60,22 +60,22 @@ namespace DemoLib
         }
 
         //to use XML documentation don't forget to enable "XML Documentation File" in the projects properties!
-        ///<summary>An operation to test html documentation</summary>
+        ///<summary>An operation to test xml documentation</summary>
         ///<remarks>No remarks</remarks>
         ///<tags>html documentation test</tags>
         ///<param name="a">the param a</param>
         ///<returns>returns 2 a</returns>
-        public static int HTMLDocuTest(int a)
+        public static int XMLDocuTest(int a)
         {
             return a*2;
         }
 
         //you can use ref parameters, but
-        //beware: assigning the parameter leads to undefined behavior in VL (for now)
+        //beware: assigning the parameter in the method leads to undefined behavior in VL (for now)
         //so only make use of it in a readonly fashion
-        public static int RefParams(ref int firstInput)
+        public static int RefParams(ref int input)
         {
-            return firstInput + 4444;
+            return input + 4444;
         }
     }
 }
