@@ -73,19 +73,11 @@ namespace DemoLib
         {
         }
 
-        public static MyEnum Default
+        //this method needs to be imported in VL to set the default
+        public static MyEnum CreateDefault()
         {
-            get
-            {
-                if (MyEnumDefinition.Instance.Entries.Count > 0)
-                {
-                    return new MyEnum(MyEnumDefinition.Instance.Entries[0]);
-                }
-                else
-                {
-                    return new MyEnum("No Entries");
-                }
-            }
+            //use method of base class if nothing special required
+            return CreateDefaultBase();
         }
     }
 }

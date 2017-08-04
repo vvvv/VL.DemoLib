@@ -29,7 +29,7 @@ namespace DemoLib
         }
 
         //setting pin defaults
-        public static float Defaults(float firstInput=44f, float secondInput=0.44f)
+        public static float Defaults(float firstInput = 44f, float secondInput = 0.44f)
         {
             return firstInput + secondInput;
         }

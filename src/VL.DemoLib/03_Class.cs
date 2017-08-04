@@ -17,14 +17,14 @@ namespace DemoLib
         }
 
         //an operation called Update
-        public float Update(float factor=1f)
+        public float Update(float factor = 1f)
         {
             FX *= factor;
             return FX;
         }
 
         //another operation
-        public float Another(float factor=1f)
+        public float Another(float factor = 1f)
         {
             FX *= factor;
             return FX;
