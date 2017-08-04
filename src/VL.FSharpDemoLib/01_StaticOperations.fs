@@ -12,9 +12,8 @@ module SomeFSharpVLOperations =
     //pinnames are separated at camelCasing for better reading in VL
     let PinNames firstInput secondInput : float32 = firstInput + secondInput
 
-    //setting pin defaults, doesnt work yet, see:
-    //https://github.com/Microsoft/visualfsharp/issues/96#issuecomment-320355720
-    //let DefaultTest ([<Optional; DefaultParameterValue(42)>] input) : int = input
+    //setting pin defaults, needs F# compiler tools 4.1 or Visual Studio 2017
+    let DefaultTest ([<Optional; DefaultParameterValue(44)>] firstInput:float32) ([<Optional; DefaultParameterValue(0.44f)>] secondInput:float32) = firstInput + secondInput
 
     //multiple outputs via out parameters
     let MultipleOutputs (firstInput:float32) (secondInput:float32) ([<Out>] added:byref<float32>) ([<Out>] multiplied:byref<float32>) =
