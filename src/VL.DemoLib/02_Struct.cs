@@ -4,24 +4,19 @@ using System.Text;
 
 namespace DemoLib
 {
+    //this can be imported as immutable record in VL because it only has a read-only property
     public struct SimpleStruct
     {
-        private int FX;
-        public int X
+        public int X { get; }
+
+        public SimpleStruct(int x)
         {
-            get
-            {
-                return FX;
-            }
-            set
-            {
-                if (value < 100)
-                    FX = value;
-            }
+            X = x;
         }
+
         public int TwoX()
         {
-            return FX * 2;
+            return X * 2;
         }
     }
 }

@@ -31,9 +31,9 @@ namespace DemoLib
             MyEnumDefinition.Instance.AddEntry(entry);
         }
 
-        public void RemoveEnumEntry(string entry)
+        public bool RemoveEnumEntry(string entry)
         {
-            MyEnumDefinition.Instance.RemoveEntry(entry);
+            return MyEnumDefinition.Instance.RemoveEntry(entry);
         }
     }
 
@@ -52,7 +52,7 @@ namespace DemoLib
         {
             return Observable.FromEventPattern<NotifyCollectionChangedEventHandler, NotifyCollectionChangedEventArgs>(
                 h => FMyEntries.CollectionChanged += h,
-                h => FMyEntries.CollectionChanged -= h);
+                h => FMyEntries.CollectionChanged -= h).OfType<object>();
         }
 
         public void AddEntry(string entry)
@@ -60,9 +60,9 @@ namespace DemoLib
             FMyEntries.Add(entry);
         }
 
-        public void RemoveEntry(string entry)
+        public bool RemoveEntry(string entry)
         {
-            FMyEntries.Remove(entry);
+            return FMyEntries.Remove(entry);
         }
     }
 

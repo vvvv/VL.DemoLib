@@ -6,9 +6,11 @@ namespace DemoLib
 {
     public class MyDataType
     {
-        float FX;
+        //private field
+        private float FX;
 
-        public float FY;
+        //public property
+        public float Y { get; set; }
 
         //constructor
         public MyDataType(float x)

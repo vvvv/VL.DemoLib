@@ -1,8 +1,8 @@
 ﻿namespace FSharpDemoLib
-open System.Runtime.InteropServices //for the out parameters
+open System.Runtime.InteropServices //for the parameter attributes
 
 //use enum types not union types to be compatible with VL enums
-type DemoEnum = Foo=0 | bar=1
+type DemoEnum = Foo=0 | Bar=1
 
 module SomeFSharpVLOperations =
 
