@@ -4,9 +4,6 @@ using System.Linq;
 
 namespace DemoLib
 {
-    //declare enum on toplevel. doesn't work nested in a class yet!
-    public enum DemoEnum { Foo, Bar };
-
     //The name of a static class will show up as a category in VL
     public static class SomeStaticVLNodes
     { 
@@ -54,6 +51,7 @@ namespace DemoLib
         }
 
         //static enum
+        public enum DemoEnum { Foo, Bar };
         public static string StaticEnumDemo(DemoEnum e)
         {
             return e.ToString();
