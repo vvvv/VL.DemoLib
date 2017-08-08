@@ -61,13 +61,13 @@
   </Target>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="04_DynamicEnum.fs" />
     <None Include="Script.fsx" />
     <Compile Include="01_StaticOperations.fs" />
-    <Content Include="packages.config" />
-    <Compile Include="05_Record.fs" />
     <Compile Include="02_Struct.fs" />
     <Compile Include="03_Class.fs" />
+    <Compile Include="04_DynamicEnum.fs" />
+    <Compile Include="05_Record.fs" />
+    <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
