@@ -352,6 +352,25 @@
                 <Choice Kind="TypeFlag" Name="MyEnum" />
               </p:TypeAnnotation>
             </Pad>
+            <Node Bounds="322,271,88,13" Id="QEFQEeysRpcPFaBzy9ezbT">
+              <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="DemoLib" />
+                <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
+                <Choice Kind="OperationCallFlag" Name="StaticEnumDemo" />
+                <AssemblyReference ID="VL.DemoLib" />
+              </p:NodeReference>
+              <Pin Id="OtXlfwFSecGPFJRgcuGjmc" Name="E" Kind="InputPin" />
+              <Pin Id="Df5F5OE9hnALwMEaimP7t6" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="BFE8s2hXrhMOT8rL9XVkks" Comment="E" Bounds="324,224,60,19" ShowValueBox="true" isIOBox="true" Value="&quot;Bar&quot;">
+              <p:TypeAnnotation LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib.dll">
+                <Choice Kind="TypeFlag" Name="DemoEnum" />
+                <AssemblyReference ID="VL.DemoLib" />
+                <FullNameCategoryReference ID="DemoLib.SomeStaticVLNodes" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="MvKxjgAGqndQDIwKfHEylB" Comment="Result" Bounds="325,313,34,19" ShowValueBox="true" isIOBox="true" />
           </Canvas>
           <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
             <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
@@ -399,6 +418,8 @@
           <Link Id="Op662zS4ZFpNVBeK4VcHSp" Ids="QNXqZsMrqWnLCynAKxsgoV,QGZNP7tLHsoPHSeEdBWhLO" />
           <Link Id="IHha2dTjQhKLLzTyif4Y6F" Ids="JGQIHunzd1gNNULuhPriMZ,T5Pt3Sb0NELLXicKgAKUPa" />
           <Link Id="GXSCJ0vfzkHMIm9FJvEOrZ" Ids="H9mGcE8JwStNt5IlvloLR5,LJHfWzhLP0iMdBqoq8d2Pg" />
+          <Link Id="U4AQeDW8n14QG9QEn0nvX1" Ids="BFE8s2hXrhMOT8rL9XVkks,OtXlfwFSecGPFJRgcuGjmc" />
+          <Link Id="G1KbTFbFawdNrnUZs1WjBj" Ids="Df5F5OE9hnALwMEaimP7t6,MvKxjgAGqndQDIwKfHEylB" />
         </Patch>
       </Node>
       <!--
@@ -838,6 +859,25 @@
               <Pin Id="IsYO7ptIqiuM1UvWoLKTgh" Name="X" Kind="OutputPin" />
             </Node>
             <Pad Id="MKrua7X9rtVMN7DEFtPWNK" Comment="X" Bounds="971,204,33,19" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="304,301" Id="RFgZHuP480NOgRf39QAJWF">
+              <p:NodeReference LastCategoryFullName="FSharpDemoLib.SomeStaticVLNodes" LastSymbolSource="VL.FSharpDemoLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="FSharpDemoLib" />
+                <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
+                <Choice Kind="OperationCallFlag" Name="StaticEnumDemo" />
+                <AssemblyReference ID="VL.FSharpDemoLib" />
+              </p:NodeReference>
+              <Pin Id="CZYUtyZRtS0P2KTcPsCQaA" Name="E" Kind="InputPin" />
+              <Pin Id="QllwLPmkB6aO1gnsGJWi7z" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="Lr9rlSPIrevPjN5t6t9VgR" Comment="E" Bounds="306,251,60,19" ShowValueBox="true" isIOBox="true" Value="&quot;Bar&quot;">
+              <p:TypeAnnotation LastCategoryFullName="FSharpDemoLib.SomeStaticVLNodes" LastSymbolSource="VL.FSharpDemoLib.dll">
+                <Choice Kind="TypeFlag" Name="DemoEnum" />
+                <AssemblyReference ID="VL.FSharpDemoLib" />
+                <FullNameCategoryReference ID="FSharpDemoLib.SomeStaticVLNodes" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="BnJTlqBbOzDMA5CVEMiBkV" Comment="Result" Bounds="307,347,44,19" ShowValueBox="true" isIOBox="true" />
           </Canvas>
           <ProcessDefinition Id="GQ2Gi0rvbfgMlK3OQLgKTZ">
             <Fragment Id="ObijdZmUGwyL4RTFSZUh1K" Patch="BIQYLeGjYCdNqi6otfhMEW" Enabled="true" />
@@ -894,6 +934,8 @@
           <Link Id="Hgox0fnCuvvOLc74O4i49R" Ids="U6LrjR01nxTMZuvWQ5r3zT,UctHrZ6EPJ8LFDzOyCvk4t" />
           <Link Id="PQ19veahn8NOTXM0Swg5Ir" Ids="IsYO7ptIqiuM1UvWoLKTgh,MKrua7X9rtVMN7DEFtPWNK" />
           <Link Id="N93oqXH8zmUM2giTAKJHEi" Ids="D77P8OYdYCOM8X4BKPndVS,PX6OkJvMDX2NrjugYKmejB" />
+          <Link Id="EyyBBTn91jQL414J3l4Fvp" Ids="Lr9rlSPIrevPjN5t6t9VgR,CZYUtyZRtS0P2KTcPsCQaA" />
+          <Link Id="EuHk8QL6z8RPLl77QMpTmo" Ids="QllwLPmkB6aO1gnsGJWi7z,BnJTlqBbOzDMA5CVEMiBkV" />
         </Patch>
       </Node>
       <!--

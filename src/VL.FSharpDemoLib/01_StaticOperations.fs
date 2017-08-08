@@ -1,9 +1,6 @@
 ﻿namespace FSharpDemoLib
 open System.Runtime.InteropServices //for the parameter attributes
 
-//use enum types not union types to be compatible with VL enums
-type DemoEnum = Foo=0 | Bar=1
-
 module SomeStaticVLNodes =
 
     //simple static operation node
@@ -27,6 +24,8 @@ module SomeStaticVLNodes =
     let ReverseSequence input : seq<float32> = Seq.rev input
 
     //static enum
+    //use enum types not union types to be compatible with VL enums
+    type DemoEnum = Foo=0 | Bar=1
     let StaticEnumDemo (e:DemoEnum) = e.ToString()
 
     //to use XML documentation don't forget to enable "XML Documentation File" in the projects properties!
