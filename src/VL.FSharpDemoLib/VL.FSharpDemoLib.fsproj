@@ -98,7 +98,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="VL.Core">
-      <HintPath>..\packages\VL.Core.0.55.246-g2c72ed5e60\lib\net461\VL.Core.dll</HintPath>
+      <HintPath>..\packages\VL.Core.0.55.260-ge7558abe46\lib\net461\VL.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

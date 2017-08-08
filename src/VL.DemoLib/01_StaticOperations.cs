@@ -61,7 +61,7 @@ namespace DemoLib
 
         //to use XML documentation don't forget to enable "XML Documentation File" in the projects properties!
         ///<summary>An operation to test xml documentation</summary>
-        ///<remarks>No remarks</remarks>
+        ///<remarks>This is only an example node</remarks>
         ///<tags>html documentation test</tags>
         ///<param name="a">the param a</param>
         ///<returns>returns 2 a</returns>

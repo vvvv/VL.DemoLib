@@ -9,10 +9,14 @@ open System.Reactive.Linq
 
 type MyEnumDefinition () = 
     inherit DynamicEnumDefinitionBase<MyEnumDefinition> ()
-    
-    let FMyEntries : ObservableCollection<string> = new ObservableCollection<string>()
 
-    //return the current enum entries
+    let FMyEntries = ObservableCollection<string>()
+
+    //add two default entries on initialization
+    override this.Initialize() =
+        this.AddEntry "abara"
+        this.AddEntry "kadabara"
+
     override this.GetEntries() = FMyEntries :> IReadOnlyList<string>
 
     //inform the system that the enum has changed
@@ -23,7 +27,8 @@ type MyEnumDefinition () =
 
     member this.AddEntry entry = FMyEntries.Add(entry)
 
-    member this.RemoveEntry entry = FMyEntries.Remove(entry)
+    //ignore the boolean succees to get a node without output pins that automatically has a apply pin
+    member this.RemoveEntry entry = FMyEntries.Remove(entry) |> ignore
     
 [<Serializable>]
 type MyEnum (value:string) =
@@ -35,8 +40,6 @@ type MyEnum (value:string) =
         DynamicEnumBase<MyEnum, MyEnumDefinition>.CreateDefaultBase()
 
 type DynamicEnumDemo () =
-    do MyEnumDefinition.Instance.AddEntry("abara")
-    do MyEnumDefinition.Instance.AddEntry("kadabara")   
 
     member this.Update (enumInput:MyEnum) = 
         if enumInput.IsValid()

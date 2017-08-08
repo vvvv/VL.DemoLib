@@ -1,7 +1,7 @@
 ﻿namespace FSharpDemoLib
 open System.Runtime.InteropServices //for the parameter attributes
 
-type MyFSharpClass (x:float32) =
+type MyDataType (x:float32) =
     
     //private field
     let mutable FX = x

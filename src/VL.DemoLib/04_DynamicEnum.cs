@@ -12,12 +12,6 @@ namespace DemoLib
 {
     public class DynamicEnumDemo
     {
-        public DynamicEnumDemo()
-        {
-            MyEnumDefinition.Instance.AddEntry("abara");
-            MyEnumDefinition.Instance.AddEntry("kadabara");
-        }
-
         public string Update(MyEnum enumInput)
         {
             if (enumInput.IsValid())
@@ -31,15 +25,23 @@ namespace DemoLib
             MyEnumDefinition.Instance.AddEntry(entry);
         }
 
-        public bool RemoveEnumEntry(string entry)
+        public void RemoveEnumEntry(string entry)
         {
-            return MyEnumDefinition.Instance.RemoveEntry(entry);
+            MyEnumDefinition.Instance.RemoveEntry(entry);
         }
     }
 
     public class MyEnumDefinition : DynamicEnumDefinitionBase<MyEnumDefinition>
     {
         ObservableCollection<string> FMyEntries = new ObservableCollection<string>();
+
+        //this is optional an can be used if any initialization before the call to GetEntries is needed
+        protected override void Initialize()
+        {
+            //add two default entries on initialization
+            FMyEntries.Add("abara");
+            FMyEntries.Add("kadabara");
+        }
 
         //return the current enum entries
         protected override IReadOnlyList<string> GetEntries()
@@ -52,7 +54,7 @@ namespace DemoLib
         {
             return Observable.FromEventPattern<NotifyCollectionChangedEventHandler, NotifyCollectionChangedEventArgs>(
                 h => FMyEntries.CollectionChanged += h,
-                h => FMyEntries.CollectionChanged -= h).OfType<object>();
+                h => FMyEntries.CollectionChanged -= h);
         }
 
         public void AddEntry(string entry)
