@@ -1,9 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Version="0.55">
-  <p:Info Authors="vvvv group">
-    <p:LicenseUrl>https://www.gnu.org/licenses/lgpl.html</p:LicenseUrl>
-    <p:ProjectUrl>http://vvvv.org/</p:ProjectUrl>
-  </p:Info>
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" Version="0.56">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <NugetDependency Id="Q18ZLENm9gzPhBnFnztPMP" Location="VL.Core" Version="0.35.21" />
@@ -14,12 +10,11 @@
     ************************ VLDemoLib ************************
 
 -->
-      <Node Name="VLDemoLib" Bounds="151,203" Id="TSttkfeJHQSN5gkEF54G9o">
+      <Node Name="VLDemoLib" Bounds="151,203" Id="TSttkfeJHQSN5gkEF54G9o" Summary="Basic stateful template with one in/out" Tags="vl">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Patch" />
           <FullNameCategoryReference ID="Primitive" />
         </p:NodeReference>
-        <p:Info Summary="Basic stateful template with one in/out" Remarks="" Tags="vl" />
         <Patch Id="CzjSvRY5dvXQDxmAOA8mZj">
           <Patch Id="ESJZDDS0I02LAWDOx9RJVV" Name="Create" ParticipatingElements="CSXTDzFhLxULZjU3eSayxk,TOOfak0Aic1PMr7UqhV3Be" />
           <Patch Id="OkqGvJfa3PDOppp4PFQghD" Name="Update" />
@@ -475,12 +470,11 @@
     ************************ FSharpDemoLib ************************
 
 -->
-      <Node Name="FSharpDemoLib" Bounds="150,279" Id="DGbicT8wVhUMZgfVcOZIhx">
+      <Node Name="FSharpDemoLib" Bounds="150,279" Id="DGbicT8wVhUMZgfVcOZIhx" Summary="Basic stateful template with one in/out" Tags="vl">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Patch" />
           <FullNameCategoryReference ID="Primitive" />
         </p:NodeReference>
-        <p:Info Summary="Basic stateful template with one in/out" Remarks="" Tags="vl" />
         <Patch Id="GhqNd40Q1YgPM0CMLZhznB">
           <Patch Id="BIQYLeGjYCdNqi6otfhMEW" Name="Create" ParticipatingElements="CNBcMRUULGoNI5HqVJY3wE,FE5Q5Wu5zksLDBqT9Qz3Ym,MuWRebNmfrnLIlMwJnR9yK" />
           <Patch Id="Qfehp98TkBrMqt6V7702xq" Name="Update" />
@@ -793,7 +787,7 @@
               </p:TypeAnnotation>
             </Pad>
             <Pad Id="B8ehes8EewTQMaLaO4Sp32" Comment="Selected Enum Entry" Bounds="1217,514,69,19" ShowValueBox="true" isIOBox="true" />
-            <Pad Id="ChosoVOTnpPL1yOoGFGe0u" Bounds="127,59,330,30" ShowValueBox="true" isIOBox="true" Value="&quot;All these nodes are written in F#&quot;">
+            <Pad Id="ChosoVOTnpPL1yOoGFGe0u" Bounds="121,95,330,30" ShowValueBox="true" isIOBox="true" Value="&quot;All these nodes are written in F#&quot;">
               <p:ValueBoxSettings>
                 <p:fontsize p:Type="Int32">14</p:fontsize>
                 <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
