@@ -832,7 +832,7 @@
               </p:TypeAnnotation>
             </Pad>
             <Pad Id="B8ehes8EewTQMaLaO4Sp32" Comment="Selected Enum Entry" Bounds="1217,514,69,19" ShowValueBox="true" isIOBox="true" />
-            <Pad Id="ChosoVOTnpPL1yOoGFGe0u" Bounds="127,59,330,30" ShowValueBox="true" isIOBox="true" Value="&quot;All these nodes are written in F#&quot;">
+            <Pad Id="ChosoVOTnpPL1yOoGFGe0u" Bounds="121,95,330,30" ShowValueBox="true" isIOBox="true" Value="&quot;All these nodes are written in F#&quot;">
               <p:ValueBoxSettings>
                 <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 <p:fontsize p:Type="Int32">14</p:fontsize>
