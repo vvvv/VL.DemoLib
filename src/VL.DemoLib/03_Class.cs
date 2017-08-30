@@ -6,11 +6,16 @@ namespace DemoLib
 {
     public class MyDataType
     {
-        //private field
+        //private fields
         private float FX;
+        private float FThreshold = 10f;
 
         //public property
         public float Y { get; set; }
+
+        //public event
+        public event EventHandler<float> OnValueExceeded;
+        public event EventHandler OnValueChanged;
 
         //constructor
         public MyDataType(float x)
@@ -19,17 +24,23 @@ namespace DemoLib
         }
 
         //an operation called Update
-        public float Update(float factor = 1f)
+        public float AddValue(float value)
         {
-            FX *= factor;
+            var lastFX = FX;
+            FX += value;
+            if (FX != lastFX)
+                OnValueChanged?.Invoke(this, EventArgs.Empty);
+
+            if (FX > FThreshold)
+                OnValueExceeded?.Invoke(this, FX);
+
             return FX;
         }
 
         //another operation
-        public float Another(float factor = 1f)
+        public void SetThreshold(float threshold = 10f)
         {
-            FX *= factor;
-            return FX;
+            FThreshold = threshold;
         }
 
         //protected operations will not show up
