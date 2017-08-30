@@ -251,7 +251,7 @@
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="AHXU2aNOgNHLu9v7lpwNPv" Comment="Result" Bounds="964,341,33,19" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="AHXU2aNOgNHLu9v7lpwNPv" Comment="Result" Bounds="942,365,33,19" ShowValueBox="true" isIOBox="true" />
             <Pad Id="R1QihiPoLKAQSAZOz9Mmp8" Comment="Threshold" Bounds="953,194,39,19" ShowValueBox="true" isIOBox="true" Value="10.0">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
