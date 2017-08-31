@@ -13,10 +13,6 @@ namespace DemoLib
         //public property
         public float Y { get; set; }
 
-        //public event
-        public event EventHandler<float> OnValueExceeded;
-        public event EventHandler OnValueChanged;
-
         //constructor
         public MyDataType(float x)
         {
@@ -28,19 +24,8 @@ namespace DemoLib
         {
             var lastFX = FX;
             FX += value;
-            if (FX != lastFX)
-                OnValueChanged?.Invoke(this, EventArgs.Empty);
-
-            if (FX > FThreshold)
-                OnValueExceeded?.Invoke(this, FX);
 
             return FX;
-        }
-
-        //another operation
-        public void SetThreshold(float threshold = 10f)
-        {
-            FThreshold = threshold;
         }
 
         //protected operations will not show up

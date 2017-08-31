@@ -64,6 +64,7 @@
     <Compile Include="02_Struct.cs" />
     <Compile Include="03_Class.cs" />
     <Compile Include="04_DynamicEnum.cs" />
+    <Compile Include="05_Events.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="01_StaticOperations.cs" />
   </ItemGroup>
