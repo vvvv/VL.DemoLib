@@ -67,6 +67,7 @@
     <Compile Include="03_Class.fs" />
     <Compile Include="04_DynamicEnum.fs" />
     <Compile Include="05_Record.fs" />
+    <Compile Include="06_Events.fs" />
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

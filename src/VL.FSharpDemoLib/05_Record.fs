@@ -1,7 +1,8 @@
 ﻿namespace FSharpDemoLib
 
 //F# types are immutable by default, 
-//so every type that does not contain the keyword 'mutable' can be imported as VL record
+//so every type that does not contain the keyword 'mutable'
+//and has members that are also immutable can be imported as VL record
 
 //the most easy example is F#'s own record type.
 //we can even attach some helper methods to "modify" instances of the record

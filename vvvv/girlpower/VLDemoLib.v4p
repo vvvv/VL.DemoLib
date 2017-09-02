@@ -20,16 +20,16 @@
    </NODE>
    <PACK Name="vvvv-Message" Version="2.9.6">
    </PACK>
-   <NODE id="15" systemname="VLDemoLib (Value)" filename="..\..\VL.DemoLib.vl" nodename="VLDemoLib (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <NODE systemname="FSharpDemoLib (Value)" filename="..\..\VL.DemoLib.vl" nodename="FSharpDemoLib (Value)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="1410" top="2850" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE id="19" systemname="VLDemoLib (Value)" filename="..\..\VL.DemoLib.vl" nodename="VLDemoLib (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="1440" top="2070" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="405" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="FSharpDemoLib (Value)" filename="..\..\VL.DemoLib.vl" nodename="FSharpDemoLib (Value)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="1410" top="2850" width="100" height="100">
    </BOUNDS>
    </NODE>
    </PATCH>

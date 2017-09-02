@@ -4,16 +4,16 @@ using System.Text;
 
 namespace DemoLib
 {
-    //How to: Publish Events that Conform to .NET Framework Guidelines (C# Programming Guide)
+    //Publish Events that Conform to .NET Framework Guidelines (C# Programming Guide)
     //https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines
-    public class CustomEventArgs<T> : EventArgs
+    public class MyGenericEventArgs<T> : EventArgs
     {
-        public CustomEventArgs(T value)
+        public readonly T Value;
+
+        public MyGenericEventArgs(T value)
         {
             Value = value;
         }
-
-        public T Value { get; }
     }
 
     public class MyDataTypeWithEvents
@@ -22,16 +22,13 @@ namespace DemoLib
         private float FX;
         private float FThreshold = 10f;
 
-        //public property
-        public float Y { get; set; }
-
         //public events
-        public event EventHandler OnValueChanged;
-        public event EventHandler<CustomEventArgs<float>> OnValueExceeded;
+        public event EventHandler ValueChanged;
+        public event EventHandler<MyGenericEventArgs<float>> ValueExceeded;
 
         //public static events
-        public static event EventHandler OnAnyValueChanged;
-        public static event EventHandler<CustomEventArgs<float>> OnAnyValueExceeded;
+        public static event EventHandler AnyValueChanged;
+        public static event EventHandler<MyGenericEventArgs<float>> AnyValueExceeded;
 
         //constructor
         public MyDataTypeWithEvents(float x)
@@ -39,21 +36,20 @@ namespace DemoLib
             FX = x;
         }
 
-        //an operation called Update
+        //an operation
         public float AddValue(float value)
         {
-            var lastFX = FX;
-            FX += value;
-            if (FX != lastFX)
+            if (value != 0)
             {
-                OnValueChanged?.Invoke(this, EventArgs.Empty);
-                OnAnyValueChanged?.Invoke(this, EventArgs.Empty);
+                FX += value;
+                ValueChanged?.Invoke(this, EventArgs.Empty);
+                AnyValueChanged?.Invoke(this, EventArgs.Empty);
             }
 
             if (FX > FThreshold)
             {
-                OnValueExceeded?.Invoke(this, new CustomEventArgs<float>(FX));
-                OnAnyValueExceeded?.Invoke(this, new CustomEventArgs<float>(FX));
+                ValueExceeded?.Invoke(this, new MyGenericEventArgs<float>(FX));
+                AnyValueExceeded?.Invoke(this, new MyGenericEventArgs<float>(FX));
             }
 
             return FX;
@@ -63,20 +59,6 @@ namespace DemoLib
         public void SetThreshold(float threshold = 10f)
         {
             FThreshold = threshold;
-        }
-
-        //protected operations will not show up
-        protected float ProtectedOp(float factor)
-        {
-            FX *= factor;
-            return FX;
-        }
-
-        //private operations will not show up
-        private float PrivateOp(float factor)
-        {
-            FX *= factor;
-            return FX;
         }
     }
 }
