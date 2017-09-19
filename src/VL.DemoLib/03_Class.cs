@@ -19,7 +19,7 @@ namespace DemoLib
             FX = x;
         }
 
-        //an operation called Update
+        //an operation called AddValue
         public float AddValue(float value)
         {
             var lastFX = FX;
