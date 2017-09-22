@@ -22,10 +22,16 @@ namespace DemoLib
         //an operation called AddValue
         public float AddValue(float value)
         {
-            var lastFX = FX;
             FX += value;
+            FX = Math.Min(FX, FThreshold);
 
             return FX;
+        }
+
+        //another operation
+        public void SetThreshold(float threshold = 10f)
+        {
+            FThreshold = threshold;
         }
 
         //protected operations will not show up
