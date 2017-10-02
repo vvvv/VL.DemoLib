@@ -5,6 +5,7 @@ type MyDataType (x:float32) =
     
     //private field
     let mutable FX = x
+    let mutable FThreshold = 10.0f
 
     //private operations declared with 'let' will not show up
     let PrivateOp factor = 
@@ -14,13 +15,13 @@ type MyDataType (x:float32) =
     //public mutable property
     member val Y = 0.0f with get, set
 
-    //an operation called update
-    member this.Update ([<Optional; DefaultParameterValue(1)>] factor) = 
-        FX <- FX * factor
+    //an operation called AddValue
+    member this.AddValue (value) = 
+        FX <- FX + value
+        FX <- min FX FThreshold
         FX
 
     //another operation
-    member this.Another ([<Optional; DefaultParameterValue(1)>] factor) = 
-        FX <- FX * factor
-        FX
+    member this.SetThreshold ([<Optional; DefaultParameterValue(10)>] threshold) = 
+        FThreshold <- threshold
 

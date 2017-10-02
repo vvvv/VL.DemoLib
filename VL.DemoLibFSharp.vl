@@ -204,15 +204,15 @@
               <Pin Id="NdkzNmVGcb0PHl8y5zGg4C" Name="X" Kind="InputPin" />
               <Pin Id="OljgsuCYu9tOmtJZfgZ1eA" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="835,469,53,22" Id="SlvGnYGH0W8LwxR5PfszLZ">
+            <Node Bounds="836,469,53,22" Id="SlvGnYGH0W8LwxR5PfszLZ">
               <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyDataType" LastSymbolSource="VL.FSharpDemoLib.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="MyDataType" />
-                <Choice Kind="OperationCallFlag" Name="Update" />
                 <AssemblyReference ID="VL.FSharpDemoLib" />
+                <Choice Kind="OperationCallFlag" Name="AddValue" />
               </p:NodeReference>
               <Pin Id="Sqe9xuJEsAhP83idbEUHH3" Name="Input" Kind="StateInputPin" />
-              <Pin Id="Oud22CRJyOPN2QBOHevitm" Name="Factor" Kind="InputPin" />
+              <Pin Id="IcdKmFiXM5HPVomAHdJNAs" Name="Value" Kind="InputPin" />
               <Pin Id="BsqMKwlFppML1UukKhIVoM" Name="Output" Kind="StateOutputPin" />
               <Pin Id="BQwYcGLbWokLKjL7rEEEqf" Name="Result" Kind="OutputPin" />
             </Node>
@@ -222,26 +222,14 @@
             <Node Bounds="837,617,53,22" Id="KwyF1rbBBymNcsIzFAoBu2">
               <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyDataType" LastSymbolSource="VL.FSharpDemoLib.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="Another" />
                 <AssemblyReference ID="VL.FSharpDemoLib" />
+                <Choice Kind="OperationCallFlag" Name="SetThreshold" />
+                <CategoryReference Kind="AssemblyCategory" Name="MyDataType" NeedsToBeDirectParent="true" />
               </p:NodeReference>
               <Pin Id="QpyvIgPZqcxN9L41XffZmc" Name="Input" Kind="StateInputPin" />
-              <Pin Id="Un0G3FX5HJwOQ8ajwI8Ju6" Name="Factor" Kind="InputPin" />
+              <Pin Id="RXIm5xmkg7ZPVsgX5waMaa" Name="Threshold" Kind="InputPin" />
               <Pin Id="GWga2nxyVDYPUaxkNXfuIy" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="KmRGZrUtJ3ULs1P99qnty9" Name="Result" Kind="OutputPin" />
             </Node>
-            <Pad Id="D7IG8XeFUp3MvugydI3dd5" Comment="Factor" Bounds="909,444,33,19" ShowValueBox="true" isIOBox="true" Value="0.99">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Float32" />
-              </p:TypeAnnotation>
-            </Pad>
-            <Pad Id="Ovl6h3wdJ0ZN4qofwuCxfY" Comment="Result" Bounds="920,512,33,19" ShowValueBox="true" isIOBox="true" />
-            <Pad Id="OIcqrveWSH8LIBTf0HgkUZ" Comment="Factor" Bounds="910,592,33,19" ShowValueBox="true" isIOBox="true" Value="0.99">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Float32" />
-              </p:TypeAnnotation>
-            </Pad>
-            <Pad Id="Tr8wFdcrm4eM4inRnarIRH" Comment="Result" Bounds="911,672,33,19" ShowValueBox="true" isIOBox="true" />
             <Pad Id="BPhNnYSLKyDQdv04FzP20M" Comment="X" Bounds="837,322,33,19" ShowValueBox="true" isIOBox="true" Value="2.0">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
@@ -335,12 +323,12 @@
               </p:TypeAnnotation>
             </Pad>
             <Pad Id="MhH4hs8wDRiLGj555v8xgK" Comment="Enum Input" Bounds="1216,422,67,19" ShowValueBox="true" isIOBox="true" Value="{&quot;FValue&quot;:&quot;abara&quot;}">
-              <p:TypeAnnotation LastCategoryFullName="VVVV.Value" LastSymbolSource="VL.DemoLib.vl">
+              <p:TypeAnnotation LastCategoryFullName="VVVV.Value" LastSymbolSource="VL.DemoLibFSharp.vl">
                 <Choice Kind="TypeFlag" Name="MyFSharpEnum" />
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="894,-29,89,22" Id="MuWRebNmfrnLIlMwJnR9yK">
-              <p:NodeReference LastCategoryFullName="VVVV.Value.MyFSharpRecord" LastSymbolSource="VL.DemoLib.vl">
+              <p:NodeReference LastCategoryFullName="VVVV.Value.MyFSharpRecord" LastSymbolSource="VL.DemoLibFSharp.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="MyFSharpRecord" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -352,7 +340,7 @@
             </Node>
             <Pad Id="BLXquielnn8LBDawypCVH2" SlotId="EeVBZELUYGoN3NF7QMm97y" Bounds="897,35" />
             <Node Bounds="967,95,69,22" Id="BslKu4dfEUPOzEKePoXYfA">
-              <p:NodeReference LastCategoryFullName="VVVV.Value.MyFSharpRecord" LastSymbolSource="VL.DemoLib.vl">
+              <p:NodeReference LastCategoryFullName="VVVV.Value.MyFSharpRecord" LastSymbolSource="VL.DemoLibFSharp.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="SetX" />
                 <CategoryReference Kind="RecordType" Name="MyFSharpRecord" NeedsToBeDirectParent="true" />
@@ -362,7 +350,7 @@
               <Pin Id="D77P8OYdYCOM8X4BKPndVS" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Node Bounds="830,105,69,22" Id="Atl1a0uRdpOL5lpxuhW6qP">
-              <p:NodeReference LastCategoryFullName="VVVV.Value.MyFSharpRecord" LastSymbolSource="VL.DemoLib.vl">
+              <p:NodeReference LastCategoryFullName="VVVV.Value.MyFSharpRecord" LastSymbolSource="VL.DemoLibFSharp.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="X" />
                 <CategoryReference Kind="RecordType" Name="MyFSharpRecord" NeedsToBeDirectParent="true" />
@@ -382,7 +370,7 @@
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="968,151,69,22" Id="O7IMH3CvOWxPFbwuEWDcKw">
-              <p:NodeReference LastCategoryFullName="VVVV.Value.MyFSharpRecord" LastSymbolSource="VL.DemoLib.vl">
+              <p:NodeReference LastCategoryFullName="VVVV.Value.MyFSharpRecord" LastSymbolSource="VL.DemoLibFSharp.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="X" />
                 <CategoryReference Kind="RecordType" Name="MyFSharpRecord" NeedsToBeDirectParent="true" />
@@ -631,7 +619,7 @@
               </Patch>
             </Node>
             <Node Bounds="1792,477,111,13" Id="H2dpS1Fl3H1MUUZD1M2eA2">
-              <p:NodeReference LastCategoryFullName="VVVV.Value.FSharpDemoLib" LastSymbolSource="VL.DemoLib.vl">
+              <p:NodeReference LastCategoryFullName="VVVV.Value.FSharpDemoLib" LastSymbolSource="VL.DemoLibFSharp.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="GetExceededValue" />
                 <CategoryReference Kind="ContainerTypeFlag" Name="FSharpDemoLib" NeedsToBeDirectParent="true" />
@@ -642,7 +630,7 @@
             </Node>
             <Pad Id="OA0dwcbbF3JMG37CWSNY7o" Comment="" Bounds="1794,528,33,19" ShowValueBox="true" isIOBox="true" />
             <Node Bounds="1522,784,111,13" Id="UFyu7mdbJAkOBC9ENkUJiI">
-              <p:NodeReference LastCategoryFullName="VVVV.Value.FSharpDemoLib" LastSymbolSource="VL.DemoLib.vl">
+              <p:NodeReference LastCategoryFullName="VVVV.Value.FSharpDemoLib" LastSymbolSource="VL.DemoLibFSharp.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="GetExceededValue" />
                 <CategoryReference Kind="ContainerTypeFlag" Name="FSharpDemoLib" NeedsToBeDirectParent="true" />
@@ -654,6 +642,17 @@
             <Pad Id="O8djIX9njrhMjNN47C2Lmr" Comment="" Bounds="1524,835,45,19" ShowValueBox="true" isIOBox="true" />
             <Pad Id="SR0595Bqc3pN5udDhWsyr7" SlotId="Q8StUMd3bsiLFg1oYZT3QF" Bounds="1862,283" />
             <Pad Id="OIluAYOX9p5MvqjubB0f35" SlotId="Q8StUMd3bsiLFg1oYZT3QF" Bounds="2093,292" />
+            <Pad Id="KJ3euvyWG6WPsWJYMsNomB" Comment="Threshold" Bounds="905,593,39,19" ShowValueBox="true" isIOBox="true" Value="10.0">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="BJM8ooQyQrpPgmdugMAYlG" Comment="Value" Bounds="915,436,33,19" ShowValueBox="true" isIOBox="true" Value="0.01">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="Lx9n6l1q5pWLqPimaC9XgW" Comment="Result" Bounds="919,516,33,19" ShowValueBox="true" isIOBox="true" />
           </Canvas>
           <ProcessDefinition Id="GQ2Gi0rvbfgMlK3OQLgKTZ">
             <Fragment Id="ObijdZmUGwyL4RTFSZUh1K" Patch="BIQYLeGjYCdNqi6otfhMEW" Enabled="true" />
@@ -684,10 +683,6 @@
           <Link Id="G2oRqztEiOJLRPQSihfKC3" Ids="OljgsuCYu9tOmtJZfgZ1eA,V2Uud3Q6lApOaKhu61teP7" />
           <Link Id="DpuRKpe4PAELxTrbFSNLM5" Ids="V2Uud3Q6lApOaKhu61teP7,Sqe9xuJEsAhP83idbEUHH3" />
           <Link Id="GVPOAHNc9VpMkhNAZ22u62" Ids="BsqMKwlFppML1UukKhIVoM,QpyvIgPZqcxN9L41XffZmc" />
-          <Link Id="SCMSfUDFQHPOPPk1bn5tSz" Ids="D7IG8XeFUp3MvugydI3dd5,Oud22CRJyOPN2QBOHevitm" />
-          <Link Id="Pb0doFPGcd1NtL753TESMD" Ids="BQwYcGLbWokLKjL7rEEEqf,Ovl6h3wdJ0ZN4qofwuCxfY" />
-          <Link Id="TWQ84aYZLCsMoY6lAeUWRX" Ids="OIcqrveWSH8LIBTf0HgkUZ,Un0G3FX5HJwOQ8ajwI8Ju6" />
-          <Link Id="Sp2hh0xCSDILE3nzMZwjJL" Ids="KmRGZrUtJ3ULs1P99qnty9,Tr8wFdcrm4eM4inRnarIRH" />
           <Link Id="R6mfzdYsJu8Mp6rKERbZQp" Ids="BPhNnYSLKyDQdv04FzP20M,NdkzNmVGcb0PHl8y5zGg4C" />
           <Link Id="IcxRTjKF6ERPIRiFw5Jvwi" Ids="CJVIV0cMmW0LST1dPQYQot,Nj9QiADoBspMFRt3nbYZWu" />
           <Link Id="I2Uj3xWS7OJPt8q1MRpCgV" Ids="EVUgUGOhvvMMvN8EHIc3hG,DPKWKQ9oKhNQZAg3L0i7wR" />
@@ -735,8 +730,11 @@
           <Link Id="JkTusF9ICyzLGwz22jCVm2" Ids="ECzuijVY4sOOx6OuJM1Y47,AewwJTxDeQXMnzCHu7MHIE" />
           <Link Id="RiksYo7Kn2yMS3A0AD1nXB" Ids="MJd7NA7L520OLw3xuR9as7,FzyAn3Y6QF9M5hvPH4hTnm" />
           <Link Id="O6sGGxJLgRZOiMQB5iPU14" Ids="LJnhFtSE0JqQKQXagOostt,VfYw9RF2bMsPMCTOBoNHd5" />
-          <Patch Id="BIQYLeGjYCdNqi6otfhMEW" Name="Create" ParticipatingElements="CNBcMRUULGoNI5HqVJY3wE,FE5Q5Wu5zksLDBqT9Qz3Ym,MuWRebNmfrnLIlMwJnR9yK,RPAXIa9J9reMlYcIoU4U7U" IsExplicitlyHidden="true" />
+          <Patch Id="BIQYLeGjYCdNqi6otfhMEW" Name="Create" ParticipatingElements="CNBcMRUULGoNI5HqVJY3wE,MuWRebNmfrnLIlMwJnR9yK,RPAXIa9J9reMlYcIoU4U7U,FE5Q5Wu5zksLDBqT9Qz3Ym" IsExplicitlyHidden="true" />
           <Patch Id="Qfehp98TkBrMqt6V7702xq" Name="Update" IsExplicitlyHidden="true" />
+          <Link Id="UrPW5zPC2sKOTj3foF5iCJ" Ids="KJ3euvyWG6WPsWJYMsNomB,RXIm5xmkg7ZPVsgX5waMaa" />
+          <Link Id="NNwFR4fUXgZPCsMUjCwoAI" Ids="BJM8ooQyQrpPgmdugMAYlG,IcdKmFiXM5HPVomAHdJNAs" />
+          <Link Id="EIusd4b88NlOn5M7WmQsqK" Ids="BQwYcGLbWokLKjL7rEEEqf,Lx9n6l1q5pWLqPimaC9XgW" />
         </Patch>
       </Node>
       <!--

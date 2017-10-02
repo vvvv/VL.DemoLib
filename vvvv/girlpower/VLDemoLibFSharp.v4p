@@ -20,7 +20,7 @@
    </NODE>
    <PACK Name="vvvv-Message" Version="2.9.6">
    </PACK>
-   <NODE systemname="FSharpDemoLib (Value)" filename="C:\Dev\vvvv\VLDemoLib\VL.DemoLibFSharp.vl" nodename="FSharpDemoLib (Value)" componentmode="Hidden" id="20">
+   <NODE systemname="FSharpDemoLib (Value)" filename="C:\Dev\vvvv\VLDemoLib\VL.DemoLibFSharp.vl" nodename="FSharpDemoLib (Value)" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="1665" top="2595" width="100" height="100">
    </BOUNDS>
    </NODE>
