@@ -1,10 +1,10 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50debug35.9.dtd" >
-   <PATCH nodename="C:\Dev\vvvv\VLDemoLib\vvvv\girlpower\VLDemoLib.v4p" systemname="callmenames" filename="C:\Users\joreg\Desktop\node17\vlNodesAndLibs\callmenames.v4p">
-   <BOUNDS type="Window" left="5040" top="4560" width="9000" height="6000">
+   <PATCH nodename="C:\Dev\vvvv\VLDemoLib\vvvv\girlpower\VLDemoLibFSharp.v4p" systemname="VLDemoLibFSharp" filename="C:\Dev\vvvv\VLDemoLib\vvvv\girlpower\VLDemoLibFSharp.v4p">
+   <BOUNDS type="Window" left="4155" top="6210" width="9000" height="6000">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.9.0">
    </PACK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="13">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
    <BOUNDS type="Node" left="3510" top="2415" width="4200" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="3510" top="2415" width="1770" height="765">
@@ -20,12 +20,8 @@
    </NODE>
    <PACK Name="vvvv-Message" Version="2.9.6">
    </PACK>
-   <NODE id="19" systemname="VLDemoLib (Value)" filename="..\..\VL.DemoLib.vl" nodename="VLDemoLib (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="1650" top="2580" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="210" top="1155" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   <NODE systemname="FSharpDemoLib (Value)" filename="C:\Dev\vvvv\VLDemoLib\VL.DemoLibFSharp.vl" nodename="FSharpDemoLib (Value)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="1665" top="2595" width="100" height="100">
    </BOUNDS>
    </NODE>
    </PATCH>
