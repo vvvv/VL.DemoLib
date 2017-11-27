@@ -25,6 +25,16 @@ namespace DemoLib
         {
             return MyEnumDefinition.Instance;
         }
+
+        public void AddEnumEntry(string entry)
+        {
+            MyEnumDefinition.Instance.AddEntry(entry, null);
+        }
+
+        public void RemoveEnumEntry(string entry)
+        {
+            MyEnumDefinition.Instance.RemoveEntry(entry);
+        }
     }
 
     public class MyEnumDefinition : ManualDynamicEnumDefinitionBase<MyEnumDefinition>
