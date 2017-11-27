@@ -8,27 +8,12 @@ open VL.Lib.Collections
 open System.Reactive.Linq
 
 type MyEnumDefinition () = 
-    inherit DynamicEnumDefinitionBase<MyEnumDefinition> ()
-
-    let FMyEntries = ObservableCollection<string>()
+    inherit ManualDynamicEnumDefinitionBase<MyEnumDefinition> ()
 
     //add two default entries on initialization
     override this.Initialize() =
-        this.AddEntry "abara"
-        this.AddEntry "kadabara"
-
-    override this.GetEntries() = FMyEntries :> IReadOnlyList<string>
-
-    //inform the system that the enum has changed
-    override this.GetEntriesChangedObservable() =
-        Observable.FromEventPattern<NotifyCollectionChangedEventHandler, NotifyCollectionChangedEventArgs>( 
-            (fun h -> FMyEntries.CollectionChanged.AddHandler h),
-            (fun h -> FMyEntries.CollectionChanged.RemoveHandler h)).Select(fun ep -> ep :> Object)
-
-    member this.AddEntry entry = FMyEntries.Add(entry)
-
-    //ignore the boolean succees to get a node without output pins that automatically has a apply pin
-    member this.RemoveEntry entry = FMyEntries.Remove(entry) |> ignore
+        this.AddEntry ("abara", null)
+        this.AddEntry ("kadabara", null)
     
 [<Serializable>]
 type MyEnum (value:string) =
@@ -46,6 +31,5 @@ type DynamicEnumDemo () =
         then enumInput.Definition.Entries.Item (enumInput.SelectedIndex())
         else "No valid entry selected"
 
-    member this.AddEnumEntry entry = MyEnumDefinition.Instance.AddEntry entry
-    member this.RemoveEnumEntry entry = MyEnumDefinition.Instance.RemoveEntry entry
+    member this.GetDefinition = MyEnumDefinition.Instance
 

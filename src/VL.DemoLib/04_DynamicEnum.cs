@@ -7,6 +7,7 @@ using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VL.Lib.Collections;
+using VL.Core;
 
 namespace DemoLib
 {
@@ -20,51 +21,20 @@ namespace DemoLib
                 return "No valid entry selected";
         }
 
-        public void AddEnumEntry(string entry)
+        public MyEnumDefinition GetDefinition()
         {
-            MyEnumDefinition.Instance.AddEntry(entry);
-        }
-
-        public void RemoveEnumEntry(string entry)
-        {
-            MyEnumDefinition.Instance.RemoveEntry(entry);
+            return MyEnumDefinition.Instance;
         }
     }
 
-    public class MyEnumDefinition : DynamicEnumDefinitionBase<MyEnumDefinition>
+    public class MyEnumDefinition : ManualDynamicEnumDefinitionBase<MyEnumDefinition>
     {
-        ObservableCollection<string> FMyEntries = new ObservableCollection<string>();
-
         //this is optional an can be used if any initialization before the call to GetEntries is needed
         protected override void Initialize()
         {
             //add two default entries on initialization
-            FMyEntries.Add("abara");
-            FMyEntries.Add("kadabara");
-        }
-
-        //return the current enum entries
-        protected override IReadOnlyList<string> GetEntries()
-        {
-            return FMyEntries;
-        }
-
-        //inform the system that the enum has changed
-        protected override IObservable<object> GetEntriesChangedObservable()
-        {
-            return Observable.FromEventPattern<NotifyCollectionChangedEventHandler, NotifyCollectionChangedEventArgs>(
-                h => FMyEntries.CollectionChanged += h,
-                h => FMyEntries.CollectionChanged -= h);
-        }
-
-        public void AddEntry(string entry)
-        {
-            FMyEntries.Add(entry);
-        }
-
-        public bool RemoveEntry(string entry)
-        {
-            return FMyEntries.Remove(entry);
+            AddEntry("abara", null);
+            AddEntry("kadabara", null);
         }
     }
 
