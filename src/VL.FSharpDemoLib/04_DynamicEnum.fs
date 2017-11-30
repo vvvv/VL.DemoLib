@@ -31,5 +31,6 @@ type DynamicEnumDemo () =
         then enumInput.Definition.Entries.Item (enumInput.SelectedIndex())
         else "No valid entry selected"
 
-    member this.GetDefinition = MyEnumDefinition.Instance
+    member this.AddEnumEntry entry = MyEnumDefinition.Instance.AddEntry (entry, null)
+    member this.RemoveEnumEntry entry = MyEnumDefinition.Instance.RemoveEntry entry |> ignore
 
