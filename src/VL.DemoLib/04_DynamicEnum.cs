@@ -46,6 +46,9 @@ namespace DemoLib
             AddEntry("abara", null);
             AddEntry("kadabara", null);
         }
+
+        //add this to get a node that can access the Instance from everywhere
+        public static MyEnumDefinition Instance => ManualDynamicEnumDefinitionBase<MyEnumDefinition>.Instance;
     }
 
     [Serializable]

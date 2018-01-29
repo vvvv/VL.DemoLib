@@ -14,6 +14,9 @@ type MyEnumDefinition () =
     override this.Initialize() =
         this.AddEntry ("abara", null)
         this.AddEntry ("kadabara", null)
+
+    //add this to get a node that can access the Instance from everywhere
+    static member Instance = ManualDynamicEnumDefinitionBase<MyEnumDefinition>.Instance
     
 [<Serializable>]
 type MyEnum (value:string) =

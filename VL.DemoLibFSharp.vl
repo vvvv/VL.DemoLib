@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" Version="0.59">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" Version="0.74">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <NugetDependency Id="Q18ZLENm9gzPhBnFnztPMP" Location="VL.Core" Version="0.35.21" />
@@ -22,7 +22,6 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
                 <Choice Kind="OperationCallFlag" Name="Defaults" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="TxkTkEqjV3ZPTGWIslXG4h" Name="First Input" Kind="InputPin" />
               <Pin Id="JFCaGh91AoNNHanIbpm87f" Name="Second Input" Kind="InputPin" />
@@ -42,7 +41,6 @@
               <p:NodeReference LastCategoryFullName="FSharpDemoLib.SomeStaticVLNodes" LastSymbolSource="VL.FSharpDemoLib.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Generic" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="PVI3QE0R08yQFCkNOC51qP" Name="Input" Kind="InputPin" />
               <Pin Id="Dz04744aimWOTwvultwrnt" Name="Result" Kind="OutputPin" />
@@ -58,7 +56,6 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
                 <Choice Kind="OperationCallFlag" Name="MultipleOutputs" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="PnpTZRh9GSMNLdQKv1BxBY" Name="First Input" Kind="InputPin" />
               <Pin Id="PDzk7yLlLMkQT4V1XYwrLy" Name="Second Input" Kind="InputPin" />
@@ -83,7 +80,6 @@
                 <CategoryReference Kind="AssemblyCategory" Name="FSharpDemoLib" />
                 <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
                 <Choice Kind="OperationCallFlag" Name="MyAddition" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="AMSg4oBHUItO107yFO6pHC" Name="Input" Kind="InputPin" />
               <Pin Id="R7UWbpFNH0NM4UAYat21gg" Name="Input 2" Kind="InputPin" />
@@ -94,7 +90,6 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
                 <Choice Kind="OperationCallFlag" Name="PinNames" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="Nj9QiADoBspMFRt3nbYZWu" Name="First Input" Kind="InputPin" />
               <Pin Id="DPKWKQ9oKhNQZAg3L0i7wR" Name="Second Input" Kind="InputPin" />
@@ -114,7 +109,6 @@
               <p:NodeReference LastCategoryFullName="FSharpDemoLib.SomeStaticVLNodes" LastSymbolSource="VL.FSharpDemoLib.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="XMLDocuTest" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="DMfleDW3IUCQKIZzY1LA01" Name="A" Kind="InputPin" />
               <Pin Id="NIvRUDw5wE6MApYEp9vbXT" Name="Output" Kind="OutputPin" />
@@ -124,7 +118,6 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
                 <Choice Kind="OperationCallFlag" Name="RefParams" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="McqB4zguOBjPv1DclmodFs" Name="Input" Kind="InputPin" />
               <Pin Id="MliKiA59WX8Lscc2On7wME" Name="Output" Kind="OutputPin" />
@@ -141,7 +134,6 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
                 <Choice Kind="OperationCallFlag" Name="ReverseSequence" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="OtffVyz9YEnLDNnjDXEAqb" Name="Input" Kind="InputPin" />
               <Pin Id="FwybLdJo2raNVzhiogWslo" Name="Output" Kind="OutputPin" />
@@ -199,7 +191,6 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="MyDataType" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="NdkzNmVGcb0PHl8y5zGg4C" Name="X" Kind="InputPin" />
               <Pin Id="OljgsuCYu9tOmtJZfgZ1eA" Name="Output" Kind="StateOutputPin" />
@@ -208,7 +199,6 @@
               <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyDataType" LastSymbolSource="VL.FSharpDemoLib.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="MyDataType" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
                 <Choice Kind="OperationCallFlag" Name="AddValue" />
               </p:NodeReference>
               <Pin Id="Sqe9xuJEsAhP83idbEUHH3" Name="Input" Kind="StateInputPin" />
@@ -222,7 +212,6 @@
             <Node Bounds="837,617,53,22" Id="KwyF1rbBBymNcsIzFAoBu2">
               <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyDataType" LastSymbolSource="VL.FSharpDemoLib.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
                 <Choice Kind="OperationCallFlag" Name="SetThreshold" />
                 <CategoryReference Kind="AssemblyCategory" Name="MyDataType" NeedsToBeDirectParent="true" />
               </p:NodeReference>
@@ -250,7 +239,6 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="DynamicEnumDemo" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="DnrKTWsMFwwLzyYA8New5P" Name="Output" Kind="StateOutputPin" />
             </Node>
@@ -260,7 +248,6 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Update" />
                 <CategoryReference Kind="AssemblyCategory" Name="DynamicEnumDemo" NeedsToBeDirectParent="true" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="G79pXMq7JvyO70jZ4OtLSL" Name="Input" Kind="StateInputPin" />
               <Pin Id="Okrg0rI2IwfLMgql9bvbhf" Name="Enum Input" Kind="InputPin" />
@@ -272,7 +259,6 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="DynamicEnumDemo" />
                 <Choice Kind="OperationCallFlag" Name="AddEnumEntry" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="Kqd4gbggPvKQEdChAzw8w0" Name="Input" Kind="StateInputPin" />
               <Pin Id="HkxyePFdqv3LL1InNnJcwi" Name="Entry" Kind="InputPin" />
@@ -296,7 +282,6 @@
               <p:NodeReference LastCategoryFullName="FSharpDemoLib.DynamicEnumDemo" LastSymbolSource="VL.FSharpDemoLib.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="DynamicEnumDemo" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
                 <Choice Kind="OperationCallFlag" Name="RemoveEnumEntry" />
               </p:NodeReference>
               <Pin Id="AWXmhpz65P7ONKGQPzxDpd" Name="Input" Kind="StateInputPin" />
@@ -330,7 +315,7 @@
             <Node Bounds="894,-29,89,22" Id="MuWRebNmfrnLIlMwJnR9yK">
               <p:NodeReference LastCategoryFullName="VVVV.Value.MyFSharpRecord" LastSymbolSource="VL.DemoLibFSharp.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="RecordType" Name="MyFSharpRecord" />
+                <CategoryReference Kind="TypeFlag" Name="MyFSharpRecord" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
               </p:NodeReference>
               <Pin Id="VSBDiNPNEqiM0gjzLWQk9U" Name="Output" Kind="StateOutputPin" />
@@ -343,7 +328,7 @@
               <p:NodeReference LastCategoryFullName="VVVV.Value.MyFSharpRecord" LastSymbolSource="VL.DemoLibFSharp.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="SetX" />
-                <CategoryReference Kind="RecordType" Name="MyFSharpRecord" NeedsToBeDirectParent="true" />
+                <CategoryReference Kind="TypeFlag" Name="MyFSharpRecord" NeedsToBeDirectParent="true" />
               </p:NodeReference>
               <Pin Id="TJF3M1ogbnNMOYIkIKnSC5" Name="Input" Kind="StateInputPin" />
               <Pin Id="PSXIzOi4Ao3O9TG1O47eRk" Name="X" Kind="InputPin" />
@@ -353,7 +338,7 @@
               <p:NodeReference LastCategoryFullName="VVVV.Value.MyFSharpRecord" LastSymbolSource="VL.DemoLibFSharp.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="X" />
-                <CategoryReference Kind="RecordType" Name="MyFSharpRecord" NeedsToBeDirectParent="true" />
+                <CategoryReference Kind="TypeFlag" Name="MyFSharpRecord" NeedsToBeDirectParent="true" />
               </p:NodeReference>
               <Pin Id="Mp065DY6Qi1NllPpLUx3YD" Name="Input" Kind="StateInputPin" />
               <Pin Id="TPF8povUR7mN3fNIEQNMpq" Name="X" Kind="OutputPin" />
@@ -373,7 +358,7 @@
               <p:NodeReference LastCategoryFullName="VVVV.Value.MyFSharpRecord" LastSymbolSource="VL.DemoLibFSharp.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="X" />
-                <CategoryReference Kind="RecordType" Name="MyFSharpRecord" NeedsToBeDirectParent="true" />
+                <CategoryReference Kind="TypeFlag" Name="MyFSharpRecord" NeedsToBeDirectParent="true" />
               </p:NodeReference>
               <Pin Id="PX6OkJvMDX2NrjugYKmejB" Name="Input" Kind="StateInputPin" />
               <Pin Id="IsYO7ptIqiuM1UvWoLKTgh" Name="X" Kind="OutputPin" />
@@ -385,7 +370,6 @@
                 <CategoryReference Kind="AssemblyCategory" Name="FSharpDemoLib" />
                 <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
                 <Choice Kind="OperationCallFlag" Name="StaticEnumDemo" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="CZYUtyZRtS0P2KTcPsCQaA" Name="E" Kind="InputPin" />
               <Pin Id="QllwLPmkB6aO1gnsGJWi7z" Name="Result" Kind="OutputPin" />
@@ -393,7 +377,6 @@
             <Pad Id="Lr9rlSPIrevPjN5t6t9VgR" Comment="E" Bounds="306,251,60,19" ShowValueBox="true" isIOBox="true" Value="&quot;Bar&quot;">
               <p:TypeAnnotation LastCategoryFullName="FSharpDemoLib.SomeStaticVLNodes" LastSymbolSource="VL.FSharpDemoLib.dll">
                 <Choice Kind="TypeFlag" Name="DemoEnum" />
-                <AssemblyReference ID="VL.FSharpDemoLib" />
                 <FullNameCategoryReference ID="FSharpDemoLib.SomeStaticVLNodes" />
               </p:TypeAnnotation>
             </Pad>
@@ -405,14 +388,13 @@
                 <CategoryReference Kind="AssemblyCategory" Name="MyDataTypeWithEvents" NeedsToBeDirectParent="true">
                   <p:OuterCategoryReference Kind="AssemblyCategory" Name="FSharpDemoLib" NeedsToBeDirectParent="true" />
                 </CategoryReference>
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="K92YNwbdZghP6VCjM0U66O" Name="Input" Kind="StateInputPin" />
               <Pin Id="ILgsQZzRjJELKHG0YoDV4X" Name="Output" Kind="StateOutputPin" />
               <Pin Id="Gew199Ef4MVLlEe3aaRBw0" Name="Value Exceeded" Kind="OutputPin" />
             </Node>
-            <Pad Id="ExHwVvutFiePhVU1JVT0Ut" Comment="On Data" Bounds="1865,438,40,19" ShowValueBox="true" isIOBox="true" />
-            <Node Bounds="1792,400,75,13" Id="QVLle3Uih7uLRBPkP7WmrZ">
+            <Pad Id="ExHwVvutFiePhVU1JVT0Ut" Comment="On Data" Bounds="1930,435,40,19" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="1857,397,75,13" Id="QVLle3Uih7uLRBPkP7WmrZ">
               <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
@@ -421,6 +403,7 @@
               <Pin Id="LwiwmzPfeHNLs7tJSAqoCN" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="OeIeLHJ1YIsLWKaGpBxPlS" Name="Value" Kind="OutputPin" />
               <Pin Id="PyIjKNsebPIPlVaDA1Filw" Name="On Data" Kind="OutputPin" />
+              <Pin Id="HoU4xXU6BzWLAjYp6b7V0X" Name="Reset" Kind="InputPin" />
             </Node>
             <Node Bounds="2091,331,93,22" Id="DbjPwJTpEQKNGe7qm1aftY">
               <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.FSharpDemoLib.dll">
@@ -429,14 +412,13 @@
                 <CategoryReference Kind="AssemblyCategory" Name="MyDataTypeWithEvents" NeedsToBeDirectParent="true">
                   <p:OuterCategoryReference Kind="AssemblyCategory" Name="FSharpDemoLib" NeedsToBeDirectParent="true" />
                 </CategoryReference>
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="BcdqxdwPIUsQQNVcdp3MVg" Name="Input" Kind="StateInputPin" />
               <Pin Id="N49omULCGnkLcata3SfxyY" Name="Output" Kind="StateOutputPin" />
               <Pin Id="LJnhFtSE0JqQKQXagOostt" Name="Value Changed" Kind="OutputPin" />
             </Node>
-            <Pad Id="C6F5LWGkfMoQRSsUdipkBL" Comment="On Data" Bounds="2094,433,40,19" ShowValueBox="true" isIOBox="true" />
-            <Node Bounds="2021,395,75,13" Id="JBG7IoEL3taMp24hErm9zS">
+            <Pad Id="C6F5LWGkfMoQRSsUdipkBL" Comment="On Data" Bounds="2217,433,40,19" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="2144,395,75,13" Id="JBG7IoEL3taMp24hErm9zS">
               <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
@@ -445,6 +427,7 @@
               <Pin Id="VfYw9RF2bMsPMCTOBoNHd5" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="Jt6INC5YJibMuxWO5zqZQ8" Name="Value" Kind="OutputPin" />
               <Pin Id="AzgdLlEOjFdMopo2oQ4N1o" Name="On Data" Kind="OutputPin" />
+              <Pin Id="L4CodglZtDTNUjYMROupMk" Name="Reset" Kind="InputPin" />
             </Node>
             <Node Bounds="1510,219,93,22" Id="RPAXIa9J9reMlYcIoU4U7U">
               <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.FSharpDemoLib.dll">
@@ -454,7 +437,6 @@
                 <CategoryReference Kind="AssemblyCategory" Name="MyDataTypeWithEvents" NeedsToBeDirectParent="true">
                   <p:OuterCategoryReference Kind="AssemblyCategory" Name="FSharpDemoLib" NeedsToBeDirectParent="true" />
                 </CategoryReference>
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="TdsOGLij1eFQPJngGzOLb1" Name="X" Kind="InputPin" />
               <Pin Id="L4fcvMJy2NLPwE2HK7SPPF" Name="Output" Kind="StateOutputPin" />
@@ -472,7 +454,6 @@
                 <CategoryReference Kind="AssemblyCategory" Name="MyDataTypeWithEvents" NeedsToBeDirectParent="true">
                   <p:OuterCategoryReference Kind="AssemblyCategory" Name="FSharpDemoLib" NeedsToBeDirectParent="true" />
                 </CategoryReference>
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="IgwCU8v3oYiPPMjEiqm9k1" Name="Input" Kind="StateInputPin" />
               <Pin Id="GiX5Emj5e0JLLwtPosVNsQ" Name="Threshold" Kind="InputPin" />
@@ -491,7 +472,6 @@
                 <CategoryReference Kind="AssemblyCategory" Name="MyDataTypeWithEvents" NeedsToBeDirectParent="true">
                   <p:OuterCategoryReference Kind="AssemblyCategory" Name="FSharpDemoLib" NeedsToBeDirectParent="true" />
                 </CategoryReference>
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="D2ceUpDpJiaPKEWpj16p9T" Name="Input" Kind="StateInputPin" />
               <Pin Id="G8vJ0U0PehEMuD3H6lkyFv" Name="Value" Kind="InputPin" />
@@ -511,12 +491,11 @@
                 <CategoryReference Kind="AssemblyCategory" Name="MyDataTypeWithEvents" NeedsToBeDirectParent="true">
                   <p:OuterCategoryReference Kind="AssemblyCategory" Name="FSharpDemoLib" NeedsToBeDirectParent="true" />
                 </CategoryReference>
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="MJd7NA7L520OLw3xuR9as7" Name="Any Value Changed" Kind="OutputPin" />
             </Node>
-            <Pad Id="NN7Ghn4CLaEP4qLZI4sx1a" Comment="On Data" Bounds="1840,697,40,19" ShowValueBox="true" isIOBox="true" />
-            <Node Bounds="1767,659,75,13" Id="BeFHGIYscXtQR4msOaJ7oY">
+            <Pad Id="NN7Ghn4CLaEP4qLZI4sx1a" Comment="On Data" Bounds="1876,714,40,19" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="1803,676,75,13" Id="BeFHGIYscXtQR4msOaJ7oY">
               <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
@@ -525,8 +504,9 @@
               <Pin Id="FzyAn3Y6QF9M5hvPH4hTnm" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="U0WKe4YNB0XMRePpBYvIhx" Name="Value" Kind="OutputPin" />
               <Pin Id="CyE3tbztTUDMB4UiUSOQDS" Name="On Data" Kind="OutputPin" />
+              <Pin Id="AI0pWAwyT8EOor4I6gotz1" Name="Reset" Kind="InputPin" />
             </Node>
-            <Pad Id="E4XlehWL1bBPCuWvGciDz4" Bounds="1714,618,86,22" ShowValueBox="true" isIOBox="true" Value="&quot;static events&quot;">
+            <Pad Id="E4XlehWL1bBPCuWvGciDz4" Bounds="1696,620,86,22" ShowValueBox="true" isIOBox="true" Value="&quot;static events&quot;">
               <p:ValueBoxSettings>
                 <p:fontsize p:Type="Int32">9</p:fontsize>
                 <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
@@ -535,14 +515,13 @@
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
-            <Node Bounds="1589,622,110,13" Id="Ses0YppVQ2oNs2XeQ90MS7">
+            <Node Bounds="1554,621,110,13" Id="Ses0YppVQ2oNs2XeQ90MS7">
               <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.FSharpDemoLib.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="AnyValueExceeded" />
                 <CategoryReference Kind="AssemblyCategory" Name="MyDataTypeWithEvents" NeedsToBeDirectParent="true">
                   <p:OuterCategoryReference Kind="AssemblyCategory" Name="FSharpDemoLib" NeedsToBeDirectParent="true" />
                 </CategoryReference>
-                <AssemblyReference ID="VL.FSharpDemoLib" />
               </p:NodeReference>
               <Pin Id="ECzuijVY4sOOx6OuJM1Y47" Name="Any Value Exceeded" Kind="OutputPin" />
             </Node>
@@ -556,19 +535,20 @@
               <Pin Id="AewwJTxDeQXMnzCHu7MHIE" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="VOxCWLSWEGuLB6b8rlxAS9" Name="Value" Kind="OutputPin" />
               <Pin Id="Czjh87wq7rhQXC92mooFdy" Name="On Data" Kind="OutputPin" />
+              <Pin Id="EtHjTpJzKpUOf3L0pVQscD" Name="Reset" Kind="InputPin" />
             </Node>
             <!--
 
     ************************ GetExceededValue ************************
 
 -->
-            <Node Name="GetExceededValue" Bounds="2098,631,207,261" Id="SKXXxAMyacrL4hxVNpjroS">
+            <Node Name="GetExceededValue" Bounds="2120,631,186,250" Id="SKXXxAMyacrL4hxVNpjroS">
               <p:NodeReference>
                 <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
-              <Patch Id="TiWy2h0mWnIOC7BWb7FV9g" IsGeneric="true">
-                <Node Bounds="2142,712,59,13" Id="Rys0TQJsaD5OKh3kY0f1oh">
+              <Patch Id="TiWy2h0mWnIOC7BWb7FV9g" IsGeneric="true" ManuallySortedPins="true">
+                <Node Bounds="2146,716,59,13" Id="Rys0TQJsaD5OKh3kY0f1oh">
                   <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="IsAssigned" />
@@ -577,9 +557,9 @@
                   <Pin Id="EBMf9vmX5kdPyb08JUKMGb" Name="Result" Kind="OutputPin" />
                   <Pin Id="SNbnzGOGi8CNqeBI91d9Te" Name="Not Assigned" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="2146,754,117,80" Id="R4cg4Fb7vR5NyPKWMwacWG">
+                <Node Bounds="2146,754,128,81" Id="R4cg4Fb7vR5NyPKWMwacWG">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                    <Choice Kind="AdaptiveRegion" Name="If" />
+                    <Choice Kind="ApplicationStatefulRegion" Name="If" />
                     <FullNameCategoryReference ID="Primitive" />
                   </p:NodeReference>
                   <Pin Id="OmtYg2RtkLsLMnFajSORes" Name="Condition" Kind="InputPin" />
@@ -589,7 +569,6 @@
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Value" />
                         <CategoryReference Kind="AssemblyCategory" Name="MyGenericEventArgs`2" NeedsToBeDirectParent="true" />
-                        <AssemblyReference ID="VL.FSharpDemoLib" />
                       </p:NodeReference>
                       <Pin Id="VdatsR7L28uLWIfrWIPlP2" Name="Input" Kind="StateInputPin" />
                       <Pin Id="R5sqvNkyGBaNxxxcIM0tM4" Name="Output" Kind="StateOutputPin" />
@@ -597,7 +576,7 @@
                     </Node>
                     <Patch Id="IxYmDMaebkyOfen4bS3Fbo" Name="Then" />
                   </Patch>
-                  <ControlPoint Id="KMYOCThN54SLlkfJ9z9Sc3" Bounds="2237,828" Alignment="Bottom" />
+                  <ControlPoint Id="KMYOCThN54SLlkfJ9z9Sc3" Bounds="2248,829" Alignment="Bottom" />
                   <ControlPoint Id="VlBpau4plmIQHA509hXVfM" Bounds="2237,760" Alignment="Top" />
                 </Node>
                 <Link Id="D2D0oVuC8pyLTINM2mFv8A" Ids="EBMf9vmX5kdPyb08JUKMGb,OmtYg2RtkLsLMnFajSORes" />
@@ -607,10 +586,10 @@
                 <Pin Id="LYBHUI5bXwSN71pszqdy4Z" Name="Input" Kind="InputPin" />
                 <Link Id="NPiVEnEWePDPonPwtdArvv" Ids="LYBHUI5bXwSN71pszqdy4Z,BwpUGYzlWSEO3Nb7DqS5ht" IsHidden="true" />
                 <Link Id="BeJ3NpUOVKeNJJ806Jk5pA" Ids="QB0vbvwTLV3OEbxnjNeisa,VlBpau4plmIQHA509hXVfM" />
-                <ControlPoint Id="QB0vbvwTLV3OEbxnjNeisa" Bounds="2250,700" />
+                <ControlPoint Id="QB0vbvwTLV3OEbxnjNeisa" Bounds="2251,715" />
                 <Pin Id="JqQTfPoT6yCLV6GCeQbJVW" Name="Default" Kind="InputPin" />
                 <Link Id="ArHecnPno0wQHO98amCGDK" Ids="JqQTfPoT6yCLV6GCeQbJVW,QB0vbvwTLV3OEbxnjNeisa" IsHidden="true" />
-                <ControlPoint Id="KXIqvz9f0mKOWgfq70fQSJ" Bounds="2239,873" />
+                <ControlPoint Id="KXIqvz9f0mKOWgfq70fQSJ" Bounds="2248,862" />
                 <Link Id="PcWcCqCNrXNQaTApxSKnLe" Ids="KMYOCThN54SLlkfJ9z9Sc3,KXIqvz9f0mKOWgfq70fQSJ" />
                 <Pin Id="COxzds6zBxkQEG2sE2Paqs" Name="Pin" Kind="OutputPin" />
                 <Link Id="Rb5Mjm5BaBXMbLzR5QKxb6" Ids="KXIqvz9f0mKOWgfq70fQSJ,COxzds6zBxkQEG2sE2Paqs" IsHidden="true" />
@@ -618,22 +597,22 @@
                 <Link Id="DqqC1KFYXy7NzYtPhscIIk" Ids="BwpUGYzlWSEO3Nb7DqS5ht,VdatsR7L28uLWIfrWIPlP2" />
               </Patch>
             </Node>
-            <Node Bounds="1792,477,111,13" Id="H2dpS1Fl3H1MUUZD1M2eA2">
+            <Node Bounds="1857,474,111,13" Id="H2dpS1Fl3H1MUUZD1M2eA2">
               <p:NodeReference LastCategoryFullName="VVVV.Value.FSharpDemoLib" LastSymbolSource="VL.DemoLibFSharp.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="GetExceededValue" />
-                <CategoryReference Kind="ContainerTypeFlag" Name="FSharpDemoLib" NeedsToBeDirectParent="true" />
+                <CategoryReference Kind="TypeFlag" Name="FSharpDemoLib" NeedsToBeDirectParent="true" />
               </p:NodeReference>
               <Pin Id="MqbpEeU0Ya6L8ZWqkmzq7x" Name="Input" Kind="InputPin" />
               <Pin Id="Lc3zGIQxoZgPez5ASJOUf9" Name="Default" Kind="InputPin" />
               <Pin Id="L4dNyL0u6MGPYtmc2fmf22" Name="Pin" Kind="OutputPin" />
             </Node>
-            <Pad Id="OA0dwcbbF3JMG37CWSNY7o" Comment="" Bounds="1794,528,33,19" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="OA0dwcbbF3JMG37CWSNY7o" Comment="" Bounds="1859,525,33,19" ShowValueBox="true" isIOBox="true" />
             <Node Bounds="1522,784,111,13" Id="UFyu7mdbJAkOBC9ENkUJiI">
               <p:NodeReference LastCategoryFullName="VVVV.Value.FSharpDemoLib" LastSymbolSource="VL.DemoLibFSharp.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="GetExceededValue" />
-                <CategoryReference Kind="ContainerTypeFlag" Name="FSharpDemoLib" NeedsToBeDirectParent="true" />
+                <CategoryReference Kind="TypeFlag" Name="FSharpDemoLib" NeedsToBeDirectParent="true" />
               </p:NodeReference>
               <Pin Id="LPuUbh7m6A7NUJdvxnDpAr" Name="Input" Kind="InputPin" />
               <Pin Id="CTIqYNXIPKKM5icJ0DdJpv" Name="Default" Kind="InputPin" />
@@ -747,12 +726,9 @@
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
         </p:NodeReference>
-        <p:TypeAnnotation>
+        <p:TypeAnnotation LastSymbolSource="VL.FSharpDemoLib.dll">
           <Choice Kind="TypeFlag" Name="MyEnum" />
-          <AssemblyReference ID="VL.FSharpDemoLib" />
           <FullNameCategoryReference ID="FSharpDemoLib" />
-          <FullNameCategoryReference ID="FSharpDemoLib" />
-          <AssemblyReference ID="VL.FSharpDemoLib" />
         </p:TypeAnnotation>
         <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
         <Patch Id="QmIrvD5sGt5NGoVjW06l9Q">
@@ -767,17 +743,17 @@
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
-              <Patch Id="KEwcRbtuW0UOOO8rReolgV">
-                <Node Bounds="342,203,73,13" ForwardPins="true" Id="FFgcnosWCvKQZ8xlyq4qaq">
+              <Patch Id="KEwcRbtuW0UOOO8rReolgV" ManuallySortedPins="true">
+                <Node Bounds="342,203,73,13" AutoConnect="true" Id="FFgcnosWCvKQZ8xlyq4qaq">
                   <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyEnum" LastSymbolSource="VL.FSharpDemoLib.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="FSharpDemoLib" />
                     <CategoryReference Kind="AssemblyCategory" Name="MyEnum" />
                     <Choice Kind="OperationCallFlag" Name="CreateDefault" />
-                    <AssemblyReference ID="VL.FSharpDemoLib" />
                   </p:NodeReference>
                   <Pin Id="AbjqYxIrurhMDGBpliLby6" Name="Result" Kind="OutputPin" />
                 </Node>
+                <Pin Id="FN8zk5poOicPHP84H5KEuu" Name="Result" Kind="OutputPin" />
               </Patch>
             </Node>
           </Canvas>
@@ -796,12 +772,9 @@
           <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
           <FullNameCategoryReference ID="Primitive" />
         </p:NodeReference>
-        <p:TypeAnnotation>
+        <p:TypeAnnotation LastSymbolSource="VL.FSharpDemoLib.dll">
           <Choice Kind="TypeFlag" Name="MyFSharpRecord" />
-          <AssemblyReference ID="VL.FSharpDemoLib" />
           <FullNameCategoryReference ID="FSharpDemoLib" />
-          <FullNameCategoryReference ID="FSharpDemoLib" />
-          <AssemblyReference ID="VL.FSharpDemoLib" />
         </p:TypeAnnotation>
         <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
         <Patch Id="EuPTq1gCBQTMFgKlMdG7pw">
@@ -816,16 +789,17 @@
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
-              <Patch Id="C7x37uoauJ4MPQEDBZwmNL">
-                <Node Bounds="515,151,69,22" ForwardPins="true" Id="PcUnGWD7XmiLODtpbUNJLc">
+              <Patch Id="C7x37uoauJ4MPQEDBZwmNL" ManuallySortedPins="true">
+                <Node Bounds="515,151,69,22" AutoConnect="true" Id="PcUnGWD7XmiLODtpbUNJLc">
                   <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyFSharpRecord" LastSymbolSource="VL.FSharpDemoLib.dll">
                     <Choice Kind="OperationNode" Name="Name" />
                     <FullNameCategoryReference ID="FSharpDemoLib.MyFSharpRecord" />
-                    <AssemblyReference ID="VL.FSharpDemoLib" />
                   </p:NodeReference>
                   <Pin Id="GtdrUPXGfk5LDzIfk2Dwpo" Name="Input" Kind="StateInputPin" />
                   <Pin Id="C3QzBcR0Lm4NuaDLS7NCHw" Name="Name" Kind="OutputPin" />
                 </Node>
+                <Pin Id="TEb7PNzqc3HMKnSWgvcoQN" Name="Input" Kind="InputPin" />
+                <Pin Id="COIa5nEjpyFNu0QzbvaS3f" Name="Name" Kind="OutputPin" />
               </Patch>
             </Node>
             <!--
@@ -838,16 +812,17 @@
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
-              <Patch Id="MPnVURVip1wMZEEyiuopF7">
-                <Node Bounds="531,299,15,13" ForwardPins="true" Id="TBGynkc8LQaMUD6Rlenp8j">
+              <Patch Id="MPnVURVip1wMZEEyiuopF7" ManuallySortedPins="true">
+                <Node Bounds="531,299,15,13" AutoConnect="true" Id="TBGynkc8LQaMUD6Rlenp8j">
                   <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyFSharpRecord" LastSymbolSource="VL.FSharpDemoLib.dll">
                     <Choice Kind="OperationNode" Name="X" />
                     <FullNameCategoryReference ID="FSharpDemoLib.MyFSharpRecord" />
-                    <AssemblyReference ID="VL.FSharpDemoLib" />
                   </p:NodeReference>
                   <Pin Id="JdDnZkaJe6zQAWQy00e3uG" Name="Input" Kind="StateInputPin" />
                   <Pin Id="UfZ22Pf8Oq6OrkGpfrf6H9" Name="X" Kind="OutputPin" />
                 </Node>
+                <Pin Id="BmLrR4og9MoOdhsMZ2pw4U" Name="Input" Kind="InputPin" />
+                <Pin Id="JnQDnYRN6rKN4dImZQp7Wv" Name="X" Kind="OutputPin" />
               </Patch>
             </Node>
             <!--
@@ -860,16 +835,17 @@
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
-              <Patch Id="LQUSnXc1RY9OW53iZ7Jrp0">
-                <Node Bounds="531,449,15,13" ForwardPins="true" Id="J3ULwXHJB3wLR88qmsw5xY">
+              <Patch Id="LQUSnXc1RY9OW53iZ7Jrp0" ManuallySortedPins="true">
+                <Node Bounds="531,449,15,13" AutoConnect="true" Id="J3ULwXHJB3wLR88qmsw5xY">
                   <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyFSharpRecord" LastSymbolSource="VL.FSharpDemoLib.dll">
                     <Choice Kind="OperationNode" Name="Y" />
                     <FullNameCategoryReference ID="FSharpDemoLib.MyFSharpRecord" />
-                    <AssemblyReference ID="VL.FSharpDemoLib" />
                   </p:NodeReference>
                   <Pin Id="QDYVJ42VI0ZNH6bYNiQrcJ" Name="Input" Kind="StateInputPin" />
                   <Pin Id="Hf1z0vDgKBSMO4S4GnbqPQ" Name="Y" Kind="OutputPin" />
                 </Node>
+                <Pin Id="KxxoJ1mSJj4LNpaujkpRy5" Name="Input" Kind="InputPin" />
+                <Pin Id="ADaG4AIL4BDMAJInKxYfd1" Name="Y" Kind="OutputPin" />
               </Patch>
             </Node>
             <!--
@@ -882,12 +858,11 @@
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
-              <Patch Id="MQ1MuYC6RFAPOr6wK6X3s4">
+              <Patch Id="MQ1MuYC6RFAPOr6wK6X3s4" ManuallySortedPins="true">
                 <Node Bounds="334,310,69,22" Id="U50lTPPdWvhP5nvG0SY3Yc">
                   <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyFSharpRecord" LastSymbolSource="VL.FSharpDemoLib.dll">
                     <Choice Kind="OperationNode" Name="Create" />
                     <FullNameCategoryReference ID="FSharpDemoLib.MyFSharpRecord" />
-                    <AssemblyReference ID="VL.FSharpDemoLib" />
                   </p:NodeReference>
                   <Pin Id="HqgWX6ibm9lMaAOuHvIexO" Name="X" Kind="InputPin" />
                   <Pin Id="MF344qoQw0qLyTNxtVDZZa" Name="Y" Kind="InputPin" />
@@ -910,17 +885,19 @@
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
-              <Patch Id="LhTuX0TS1CePjMbDDMJnvP">
-                <Node Bounds="676,154,69,22" ForwardPins="true" Id="SNfiwXtSJXqPhUK5pnJa4W">
+              <Patch Id="LhTuX0TS1CePjMbDDMJnvP" ManuallySortedPins="true">
+                <Node Bounds="676,154,69,22" AutoConnect="true" Id="SNfiwXtSJXqPhUK5pnJa4W">
                   <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyFSharpRecord" LastSymbolSource="VL.FSharpDemoLib.dll">
                     <Choice Kind="OperationNode" Name="SetName" />
                     <FullNameCategoryReference ID="FSharpDemoLib.MyFSharpRecord" />
-                    <AssemblyReference ID="VL.FSharpDemoLib" />
                   </p:NodeReference>
                   <Pin Id="Peg9AqCmV0yP9CCkVoHjED" Name="Input" Kind="StateInputPin" />
                   <Pin Id="K0vm4SPJfemPESGKYzTtrX" Name="Name" Kind="InputPin" />
                   <Pin Id="Dtikx7JMorpM5IdEyDQXZg" Name="Output" Kind="StateOutputPin" />
                 </Node>
+                <Pin Id="MmeFmpY1JWRPDD57CNGUMm" Name="Input" Kind="InputPin" />
+                <Pin Id="SP2vQCTmengLoVbLzKu8Fs" Name="Name" Kind="InputPin" />
+                <Pin Id="Df8TRMU4NquOrCwhOariN0" Name="Output" Kind="OutputPin" />
               </Patch>
             </Node>
             <!--
@@ -933,17 +910,19 @@
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
-              <Patch Id="IZcwvdow1FjQYHoz2thbha">
-                <Node Bounds="692,302,69,22" ForwardPins="true" Id="NM2ZLpVtqv9Np2GsuLxo1u">
+              <Patch Id="IZcwvdow1FjQYHoz2thbha" ManuallySortedPins="true">
+                <Node Bounds="692,302,69,22" AutoConnect="true" Id="NM2ZLpVtqv9Np2GsuLxo1u">
                   <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyFSharpRecord" LastSymbolSource="VL.FSharpDemoLib.dll">
                     <Choice Kind="OperationNode" Name="SetX" />
                     <FullNameCategoryReference ID="FSharpDemoLib.MyFSharpRecord" />
-                    <AssemblyReference ID="VL.FSharpDemoLib" />
                   </p:NodeReference>
                   <Pin Id="OoxgUfvH1KpQcaAhD73pgv" Name="Input" Kind="StateInputPin" />
                   <Pin Id="BRURVM25WZNNiDnZ0pIuAT" Name="X" Kind="InputPin" />
                   <Pin Id="DpBnvqT7HcNNJKYZ10WGeL" Name="Output" Kind="StateOutputPin" />
                 </Node>
+                <Pin Id="K0kVftW6gnmOBSrhs7UKWS" Name="Input" Kind="InputPin" />
+                <Pin Id="F75bOAw9gHFMhuRyrsHUbt" Name="X" Kind="InputPin" />
+                <Pin Id="STP2FODPuR6NtbTc3LPtIZ" Name="Output" Kind="OutputPin" />
               </Patch>
             </Node>
             <!--
@@ -956,17 +935,19 @@
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
-              <Patch Id="TlDLZEuXBgfQQkdQrBhfYD">
-                <Node Bounds="692,452,69,22" ForwardPins="true" Id="EitZB9B5EcGQBHs8Q6voC5">
+              <Patch Id="TlDLZEuXBgfQQkdQrBhfYD" ManuallySortedPins="true">
+                <Node Bounds="692,452,69,22" AutoConnect="true" Id="EitZB9B5EcGQBHs8Q6voC5">
                   <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyFSharpRecord" LastSymbolSource="VL.FSharpDemoLib.dll">
                     <Choice Kind="OperationNode" Name="SetY" />
                     <FullNameCategoryReference ID="FSharpDemoLib.MyFSharpRecord" />
-                    <AssemblyReference ID="VL.FSharpDemoLib" />
                   </p:NodeReference>
                   <Pin Id="H4hZpv8XZ94LDeXa1iAKLj" Name="Input" Kind="StateInputPin" />
                   <Pin Id="QTBt2kQNNxfLRhlBeGj71W" Name="Y" Kind="InputPin" />
                   <Pin Id="Ow3J7yiO2DCQbQxmJAQa7s" Name="Output" Kind="StateOutputPin" />
                 </Node>
+                <Pin Id="LX758nToeqQOO2JpPWEGJG" Name="Input" Kind="InputPin" />
+                <Pin Id="UeHNRCM1WquQcphyX46Ich" Name="Y" Kind="InputPin" />
+                <Pin Id="OG3KpiFSTNcLwuzVdzCUCI" Name="Output" Kind="OutputPin" />
               </Patch>
             </Node>
             <!--
@@ -979,18 +960,21 @@
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
-              <Patch Id="UsVQ1dsY0YKMa0TNbNudb3">
-                <Node Bounds="334,149,45,13" ForwardPins="true" Id="HUBeXNhUpMzOgCw1Z1AG2t">
+              <Patch Id="UsVQ1dsY0YKMa0TNbNudb3" ManuallySortedPins="true">
+                <Node Bounds="334,149,45,13" AutoConnect="true" Id="HUBeXNhUpMzOgCw1Z1AG2t">
                   <p:NodeReference LastCategoryFullName="FSharpDemoLib.MyFSharpRecord" LastSymbolSource="VL.FSharpDemoLib.dll">
                     <Choice Kind="OperationNode" Name="Create" />
                     <FullNameCategoryReference ID="FSharpDemoLib.MyFSharpRecord" />
-                    <AssemblyReference ID="VL.FSharpDemoLib" />
                   </p:NodeReference>
                   <Pin Id="JMNWXcdwTOENuMAUt0sb5e" Name="X" Kind="InputPin" />
                   <Pin Id="AQEt0pXv9hEO3RvUHKff4u" Name="Y" Kind="InputPin" />
                   <Pin Id="LAQhekrqP2ZMEGGyO2GaAC" Name="Name" Kind="InputPin" />
                   <Pin Id="Lnva2sMrqmJP3CQuILvGrl" Name="Output" Kind="StateOutputPin" />
                 </Node>
+                <Pin Id="B2oVhD9PrUOMOxe3CGkFXu" Name="X" Kind="InputPin" />
+                <Pin Id="MXCzTvsdyeDQKqKAiQQnvp" Name="Y" Kind="InputPin" />
+                <Pin Id="AyD7YdnLJhrM46S9CO3u3B" Name="Name" Kind="InputPin" />
+                <Pin Id="Gt3AyKNZ8IeO8iTwPNZ9YM" Name="Output" Kind="OutputPin" />
               </Patch>
             </Node>
           </Canvas>
@@ -1008,7 +992,7 @@
       </Node>
     </Canvas>
   </Patch>
-  <PlatformDependency Id="ScYbst3xl5YOwLc6451008" Location="./src\VL.DemoLib\bin\Debug\VL.DemoLib.dll" />
-  <PlatformDependency Id="R22T0Gkz2QlOicaowJFqoC" Location="./src\VL.FSharpDemoLib\bin\Debug\VL.FSharpDemoLib.dll" />
+  <PlatformDependency Id="ScYbst3xl5YOwLc6451008" Location="./src/VL.DemoLib/bin/Debug/VL.DemoLib.dll" />
+  <PlatformDependency Id="R22T0Gkz2QlOicaowJFqoC" Location="./src/VL.FSharpDemoLib/bin/Debug/VL.FSharpDemoLib.dll" />
   <NugetDependency Id="NSNAn2Is47FPuxow7Jr9Sm" Location="VL.DevLib" Version="0.56.119-g431658b324" />
 </Document>
