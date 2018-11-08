@@ -61,7 +61,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="02_Struct.cs" />
+    <Compile Include="02_Records.cs" />
     <Compile Include="03_Class.cs" />
     <Compile Include="04_DynamicEnum.cs" />
     <Compile Include="05_Events.cs" />
