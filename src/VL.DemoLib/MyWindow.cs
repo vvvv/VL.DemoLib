@@ -5,8 +5,8 @@ using System.Linq;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using System.Windows.Forms;
-using VL.Core.Properties;
 using VL.Lib.IO;
+using VL.UI.Core;
 
 namespace DemoLib
 {
@@ -16,7 +16,7 @@ namespace DemoLib
 
         public void SetSize(Rectangle bounds)
         {
-            var boundsinPix = Settings.DIPToPixel(bounds);
+            var boundsinPix = DIPHelpers.DIPToPixel(bounds);
             if (boundsinPix != Bounds)
                 Bounds = boundsinPix;
         }
@@ -32,13 +32,13 @@ namespace DemoLib
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
-            BoundsChanged.OnNext(Settings.DIP(Bounds));
+            BoundsChanged.OnNext(DIPHelpers.DIP(Bounds));
         }
 
         protected override void OnLocationChanged(EventArgs e)
         {
             base.OnLocationChanged(e);
-            BoundsChanged.OnNext(Settings.DIP(Bounds));
+            BoundsChanged.OnNext(DIPHelpers.DIP(Bounds));
         }
     }
 }
