@@ -16,14 +16,14 @@ namespace DemoLib
             return e.ToString();
         }
 
-        public static string StaticItalienEnumDemo(ItalienNumbers e)
+        public static string StaticItalienEnumDemo(ItalianNumbers e)
         {
             return e.ToString();
         }
     }
 
     [Flags]
-    public enum ItalienNumbers
+    public enum ItalianNumbers
     {
         Zero                   = 0,
 

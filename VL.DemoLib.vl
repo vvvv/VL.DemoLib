@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" LanguageVersion="2020.1.2.115" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2020.1.2-0115-gc53c2f0103" />
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" LanguageVersion="2020.1.1.108" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2020.1.1" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <PlatformDependency Id="ScYbst3xl5YOwLc6451008" Location="./src/VL.DemoLib/bin/Debug/VL.DemoLib.dll" />
   <PlatformDependency Id="R22T0Gkz2QlOicaowJFqoC" Location="C:/dev/VL.DemoLib/src/VL.FSharpDemoLib/bin/Debug/VL.FSharpDemoLib.dll" />
-  <NugetDependency Id="NWLjRwKUHOHQYPwzYLQOAW" Location="VL.Lang" Version="2020.1.2-0115-gc53c2f0103" />
+  <NugetDependency Id="NWLjRwKUHOHQYPwzYLQOAW" Location="VL.Lang" Version="2020.1.1" />
   <PlatformDependency Id="FUL9gXSHbmfLBOrRfj2qbA" Location="System.Windows.Forms" />
   <PlatformDependency Id="QNptdMZnVaNLRQASl9FhDd" Location="System.Drawing" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -369,16 +369,16 @@
       </Node>
       <!--
 
-    ************************ ItalienNumbers ************************
+    ************************ ItalianNumbers ************************
 
 -->
-      <Node Name="ItalienNumbers" Bounds="329,200" Id="MzKHnf0QzBfL02z2q97IYG">
+      <Node Name="ItalianNumbers" Bounds="329,200" Id="MzKHnf0QzBfL02z2q97IYG">
         <p:NodeReference>
           <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
           <FullNameCategoryReference ID="Primitive" />
         </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="VL.DemoLib" LastSymbolSource="VL.DemoLib.dll">
-          <Choice Kind="TypeFlag" Name="ItalienNumbers" />
+        <p:TypeAnnotation LastCategoryFullName="DemoLib" LastSymbolSource="VL.DemoLib.dll">
+          <Choice Kind="EnumType" Name="ItalianNumbers" />
         </p:TypeAnnotation>
         <Patch Id="N96LmNmaCaJPLxWBsyGKX2">
           <Canvas Id="I4QREUEAlaqOOr5EBNO7To" CanvasType="Group" />
@@ -984,9 +984,9 @@
             <Pin Id="PvSx5CmQcKOOIaI0A5akBF" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="PnKhk7MmQ3AN0hi7b4qgtu" Comment="" Bounds="325,333,209,34" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="L2Jg2pyAKfgNUey5q4ajtI" Comment="" Bounds="264,216,132,15" ShowValueBox="true" isIOBox="true" Value="Sedici">
+          <Pad Id="L2Jg2pyAKfgNUey5q4ajtI" Comment="" Bounds="264,216,132,15" ShowValueBox="true" isIOBox="true" Value="CentoVentOtto">
             <p:TypeAnnotation LastCategoryFullName="VVVV.Value" LastSymbolSource="VL.DemoLib.vl">
-              <Choice Kind="TypeFlag" Name="ItalienNumbers" />
+              <Choice Kind="TypeFlag" Name="ItalianNumbers" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="182,251,58,19" Id="Kpu6j9Zb8e8NA4v1YWdyLT">
@@ -1037,8 +1037,8 @@
             <Pin Id="Nk4zqHicRO4L4aSmDNS988" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="IWGemfM9ohtLETpp9lajGt" Comment="" Bounds="341,405,132,15" ShowValueBox="true" isIOBox="true" Value="DueCentoCinquantaSei">
-            <p:TypeAnnotation LastCategoryFullName="VVVV.Value" LastSymbolSource="VL.DemoLib.vl">
-              <Choice Kind="TypeFlag" Name="ItalienNumbers" />
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="ItalianNumbers" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="238,475,55,26" Id="BTU621g3026OUt6bQE8qXb">
