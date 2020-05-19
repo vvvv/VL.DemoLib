@@ -50,13 +50,6 @@ namespace DemoLib
             return input.Reverse();
         }
 
-        //static enum
-        public enum DemoEnum { Foo, Bar };
-        public static string StaticEnumDemo(DemoEnum e)
-        {
-            return e.ToString();
-        }
-
         //to use XML documentation don't forget to enable "XML Documentation File" in the projects properties!
         ///<summary>An operation to test xml documentation</summary>
         ///<remarks>This is only an example node</remarks>
