@@ -4,9 +4,20 @@
     <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="VL.Core" Version="2019.1.0-0978-gabb4253318" />
-    <PackageReference Include="VL.UI.Core" Version="2019.1.0-0978-gabb4253318" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="VL.Core" Version="2020.1.4" />
+    <PackageReference Include="VL.TestLib" Version="2020.1.4" />
+    <PackageReference Include="VL.UI.Core" Version="2020.1.4" />
+    <PackageReference Include="VVVV.NuGetAssemblyLoader" Version="0.1.25" />
   </ItemGroup>
 
   <ItemGroup>

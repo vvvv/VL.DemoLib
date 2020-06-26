@@ -25,8 +25,8 @@ module SomeStaticVLNodes =
 
     //static enum
     //use enum types not union types to be compatible with VL enums
-    type DemoEnum = Foo=0 | Bar=1
-    let StaticEnumDemo (e:DemoEnum) = e.ToString()
+    type DemoEnumFSharp = Foo=0 | Bar=1
+    let StaticEnumDemo (e:DemoEnumFSharp) = e.ToString()
 
     //to use XML documentation don't forget to enable "XML Documentation File" in the projects properties!
     ///<summary>An operation to test xml documentation</summary>

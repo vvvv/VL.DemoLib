@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="VL.Core" Version="2019.1.0-0978-gabb4253318" />
+    <PackageReference Include="VL.Core" Version="2020.1.4" />
   </ItemGroup>
 
 </Project>
