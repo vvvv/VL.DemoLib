@@ -18,19 +18,21 @@ namespace MyTests
     [TestFixture]
     public class PatchTests
     {       
-        // fix me                                
-        //                        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // FIX ME
+        //                       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         const string PacksPath = @"C:\Program Files\vvvv\vvvv_gamma_2020.1.4\lib\packs";
-        //                        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        //                       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
         /// <summary>
-        /// yield all your project files
+        /// Yield all your vl docs
         /// </summary>
         public static IEnumerable<string> NormalPatches()
         {
             var currentDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            var mainLibPath = Path.GetFullPath(Path.Combine(currentDirectory, @"..\..\..\..\..\..\..")); //get out-of src/bin/whatnot
+
+            // get out of src/VL.DemoLib/bin/whatnot
+            var mainLibPath = Path.GetFullPath(Path.Combine(currentDirectory, @"..\..\..\..\..\..\..")); 
 
             foreach (var file in Directory.GetFiles(mainLibPath, "*.vl"))
                 yield return file;
@@ -41,6 +43,7 @@ namespace MyTests
 
         static PatchTests()
         {
+            // TODO: Should we add more?
             AssemblyLoader.AddPackageRepositories(PacksPath);
 
             // Setup session
@@ -59,27 +62,28 @@ namespace MyTests
 
 
 
-        static Solution compiledSolution;
+        static Solution FCompiledSolution;
 
 
         /// <summary>
-        /// Checks if the document comes with compile time errors (liek red nodes). Doesn't actually run the patches.
+        /// Checks if the document comes with compile time errors (e.g. red nodes). Doesn't actually run the patches.
         /// </summary>
         /// <param name="filePath"></param>
         [TestCaseSource(nameof(NormalPatches))]
         public static void IsntRed(string filePath)
         {
-            var solution = compiledSolution ?? (compiledSolution = Compile(NormalPatches()));
+            var solution = FCompiledSolution ?? (FCompiledSolution = Compile(NormalPatches()));
             var document = solution.GetOrAddDocument(filePath);
 
             // Check document structure
             Assert.True(document.IsValid);
 
-            // Now do the tests
+            // Check dependenices
             foreach (var dep in document.GetDocSymbols().Dependencies)
                 Assert.IsFalse(dep.RemoteSymbolSource is Dummy, $"Couldn't find dependency {dep}. Press F6 to build all library projects!");
 
-            CheckNodes(document.AllTopLevelDefinitions); // check all containers and process nodes, including application entry point
+            // Check all containers and process node definitions, including application entry point
+            CheckNodes(document.AllTopLevelDefinitions);
         }
 
         static Solution Compile(IEnumerable<string> docs)
@@ -110,7 +114,7 @@ namespace MyTests
 
 
         /// <summary>
-        /// yield all test patches that shall run
+        /// Yield all test patches that shall run
         /// </summary>
         public static IEnumerable<string> TestPatches()
         {
