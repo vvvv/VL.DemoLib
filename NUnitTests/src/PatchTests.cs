@@ -43,7 +43,7 @@ namespace MyTests
         static PatchTests()
         {
             var currentDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            MainLibPath = Path.GetFullPath(Path.Combine(currentDirectory, @"..\..\..\..\..\..\.."));
+            MainLibPath = Path.GetFullPath(Path.Combine(currentDirectory, @"..\..\..\..\..\.."));
             RepositoriesPath = Path.GetFullPath(Path.Combine(MainLibPath, @".."));
 
             foreach (var pack in Packs)

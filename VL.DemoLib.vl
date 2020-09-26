@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" LanguageVersion="2020.1.4.167" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2020.1.4" />
-  <PlatformDependency Id="ScYbst3xl5YOwLc6451008" Location="./src/VL.DemoLib/bin/Debug/VL.DemoLib.dll" />
-  <NugetDependency Id="NWLjRwKUHOHQYPwzYLQOAW" Location="VL.Lang" Version="2020.1.4" />
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" LanguageVersion="2020.2.0.270" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2020.2.0" />
+  <NugetDependency Id="NWLjRwKUHOHQYPwzYLQOAW" Location="VL.Lang" Version="2020.2.0" />
   <PlatformDependency Id="FUL9gXSHbmfLBOrRfj2qbA" Location="System.Windows.Forms" />
   <PlatformDependency Id="QNptdMZnVaNLRQASl9FhDd" Location="System.Drawing" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -36,7 +35,7 @@
               </p:NodeReference>
               <Patch Id="G9DBzJ9mfY5O79PCh01zLe" ManuallySortedPins="true">
                 <Node Bounds="291,220,73,13" AutoConnect="true" Id="BiZkpLiJUVwPECa2NaoQ47">
-                  <p:NodeReference LastCategoryFullName="DemoLib.MyEnum" LastSymbolSource="VL.DemoLib.dll">
+                  <p:NodeReference LastCategoryFullName="DemoLib.MyEnum" LastSymbolSource="VL.DemoLib_CSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="DemoLib" />
                     <CategoryReference Kind="AssemblyCategory" Name="MyEnum" />
@@ -66,7 +65,7 @@
         <Patch Id="Ct75vACVU61NTsiK9edBRI">
           <Canvas Id="JimWv4dA4HpO1lRFeeU03f">
             <Node Bounds="543,301,56,26" Id="IaTOh2DkuUuMiwCgsZ4a1n">
-              <p:NodeReference LastCategoryFullName="DemoLib.MyWindow" LastSymbolSource="VL.DemoLib.dll">
+              <p:NodeReference LastCategoryFullName="DemoLib.MyWindow" LastSymbolSource="VL.DemoLib_CSharp.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
                 <CategoryReference Kind="AssemblyCategory" Name="MyWindow" NeedsToBeDirectParent="true" />
@@ -130,7 +129,7 @@
               <Pin Id="BIkCgv0N67kPktrIY5LTI4" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Node Bounds="160,389,56,26" Id="JkBBho8qT9NM88t3Txujc5">
-              <p:NodeReference LastCategoryFullName="DemoLib.MyWindow" LastSymbolSource="VL.DemoLib.dll">
+              <p:NodeReference LastCategoryFullName="DemoLib.MyWindow" LastSymbolSource="VL.DemoLib_CSharp.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="MyWindow" />
                 <Choice Kind="OperationCallFlag" Name="SetSize" />
@@ -161,7 +160,7 @@
               <Pin Id="EW1j7Gr2aecPsqVevmq2ay" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Node Bounds="141,432,90,26" Id="Bgi9Gmul3OPMWOvXH4KbU8">
-              <p:NodeReference LastCategoryFullName="DemoLib.MyWindow" LastSymbolSource="VL.DemoLib.dll">
+              <p:NodeReference LastCategoryFullName="DemoLib.MyWindow" LastSymbolSource="VL.DemoLib_CSharp.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="BoundsChanged" />
               </p:NodeReference>
@@ -416,7 +415,7 @@
       <Patch Id="Pcm2tZTdEPqOClkVclrfjF">
         <Canvas Id="Np4uh0uA6b6OqOYfmgONCx" CanvasType="Group">
           <Node Bounds="598,245,54,19" Id="SssOWKdYL9HN7ToC8Brhhm">
-            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
               <Choice Kind="OperationCallFlag" Name="Defaults" />
@@ -436,7 +435,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="599,388,51,19" Id="DpWDerqguR0QLGNDIr5QY6">
-            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Generic" />
             </p:NodeReference>
@@ -449,7 +448,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="233,820,89,19" Id="IyhPD6M2BmEQZJsakAFbhY">
-            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
               <Choice Kind="OperationCallFlag" Name="MultipleOutputs" />
@@ -472,7 +471,7 @@
           <Pad Id="Br2hALhQ0ofLi4cti2No5w" Comment="Multiplied" Bounds="343,876,33,19" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Sa5PMOVjwjPLEwCDVzvyXP" Comment="Added" Bounds="235,874,33,19" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="-45,203,68,19" Id="Vc4RY6u1ZadM2qALycvGj9">
-            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
               <Choice Kind="OperationCallFlag" Name="MyAddition" />
@@ -482,7 +481,7 @@
             <Pin Id="KOqbbt48sSCLUbkPDiqIDi" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="241,674,61,19" Id="LyQHeu1NQYNNjkMH06wpMO">
-            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
               <Choice Kind="OperationCallFlag" Name="PinNames" />
@@ -502,7 +501,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="621,831,79,19" Id="OsX1oodudg6NUQOgVgbE3I">
-            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="XMLDocuTest" />
             </p:NodeReference>
@@ -510,7 +509,7 @@
             <Pin Id="RUReQ296EczQDp0ekGDkFm" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="235,1008,64,19" Id="HPIBYSRLOtsMOcFMj1gOAg">
-            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
               <Choice Kind="OperationCallFlag" Name="RefParams" />
@@ -526,7 +525,7 @@
           </Pad>
           <Pad Id="Cz3cRcHRA8eNDZCUl3z1Xl" Comment="" Bounds="237,1051,36,19" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="617,665,94,19" Id="Jn4f36UM2njL5yVOaFqEJh">
-            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="SomeStaticVLNodes" />
               <Choice Kind="OperationCallFlag" Name="ReverseSequence" />
@@ -561,7 +560,7 @@
           </Pad>
           <Pad Id="QWWOOdnHvWbQBaL1KSCUxb" Comment="" Bounds="624,869,24,21" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="-49,287,68,19" Id="RaTAChWFfqELcpBJkQnGBs">
-            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.SomeStaticVLNodes" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="MyAddition" />
               <PinReference Kind="InputPin" Name="Input 3" />
@@ -600,7 +599,7 @@
           </Node>
           <Pad Id="FW49KXehnTUQDwVoWFZM6l" Comment="Result" Bounds="736,668,38,19" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="879,142,53,22" Id="C7OnmpoEMT5QVWbnlAM4RZ">
-            <p:NodeReference LastCategoryFullName="DemoLib.MyDataType" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.MyDataType" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="MyDataType" />
               <Choice Kind="OperationCallFlag" Name="Create" />
@@ -609,7 +608,7 @@
             <Pin Id="OR2mPOPJQaON33HDy1Mh8k" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="880,284,53,22" Id="QWZdUX4CfXtMtldIsHcilq">
-            <p:NodeReference LastCategoryFullName="DemoLib.MyDataType" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.MyDataType" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="MyDataType" />
               <Choice Kind="OperationCallFlag" Name="AddValue" />
@@ -642,7 +641,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="895,500,82,22" Id="J9P7ur2ExbdLI9aYjhQ4Si">
-            <p:NodeReference LastCategoryFullName="DemoLib.DynamicEnumDemo" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.DynamicEnumDemo" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="DynamicEnumDemo" />
               <Choice Kind="OperationCallFlag" Name="Create" />
@@ -651,7 +650,7 @@
           </Node>
           <Pad Id="OCXZpe23ZmNQCnhW544lI6" Bounds="898,578" />
           <Node Bounds="896,619,82,22" Id="JjdIW8XgUrZQWR0tNQET1c">
-            <p:NodeReference LastCategoryFullName="DemoLib.DynamicEnumDemo" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.DynamicEnumDemo" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Update" />
               <CategoryReference Kind="AssemblyCategory" Name="DynamicEnumDemo" NeedsToBeDirectParent="true" />
@@ -662,7 +661,7 @@
             <Pin Id="ADwQ4znK2n7Mca5KeZvtg8" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="899,799,82,22" Id="R4d0F2sic4RLd3ndOfEkKo">
-            <p:NodeReference LastCategoryFullName="DemoLib.DynamicEnumDemo" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.DynamicEnumDemo" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="DynamicEnumDemo" />
               <Choice Kind="OperationCallFlag" Name="AddEnumEntry" />
@@ -686,7 +685,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="900,898,95,22" Id="TQhK3x13knJQbnDvmIhP0t">
-            <p:NodeReference LastCategoryFullName="DemoLib.DynamicEnumDemo" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.DynamicEnumDemo" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="DynamicEnumDemo" />
               <Choice Kind="OperationCallFlag" Name="RemoveEnumEntry" />
@@ -711,7 +710,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="317,113,93,19" Id="NHDUjKzSh0PQGKAUBaAMie">
-            <p:NodeReference LastCategoryFullName="DemoLib.SomeEnumNodes" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.SomeEnumNodes" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="StaticEnumDemo" />
             </p:NodeReference>
@@ -725,7 +724,7 @@
           </Pad>
           <Pad Id="AGnUwUlaDuaOu396ffe01e" Comment="Result" Bounds="320,153,57,19" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="1651,248,93,22" Id="V1gqlCTYzESMuoFe8bRlhF">
-            <p:NodeReference LastCategoryFullName="DemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="ValueExceeded" />
             </p:NodeReference>
@@ -745,7 +744,7 @@
             <Pin Id="U8StThCBmGCLoaMSezD7R4" Name="On Data" Kind="OutputPin" />
           </Node>
           <Node Bounds="1881,249,93,22" Id="HDJdmDa4iNhNPyD1g7lU2t">
-            <p:NodeReference LastCategoryFullName="DemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="ValueChanged" />
             </p:NodeReference>
@@ -765,7 +764,7 @@
             <Pin Id="GNa23acXtxmO26NXK8WQIt" Name="On Data" Kind="OutputPin" />
           </Node>
           <Node Bounds="1300,137,93,22" Id="MA49S23jtctNgOed35cXMJ">
-            <p:NodeReference LastCategoryFullName="DemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Create" />
               <CategoryReference Kind="AssemblyCategory" Name="MyDataTypeWithEvents" NeedsToBeDirectParent="true" />
@@ -780,9 +779,10 @@
           </Pad>
           <Pad Id="K3bX9heD8tPMUntEGKTjDl" SlotId="HMOSYmbKmtqNRYfZgLCrtH" Bounds="1303,215" />
           <Node Bounds="1300,250,93,22" Id="CDIEQEJsm94NKybhPL1hLN">
-            <p:NodeReference LastCategoryFullName="DemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SetThreshold" />
+              <CategoryReference Kind="AssemblyCategory" Name="MyDataTypeWithEvents" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="MS3pCMQE9xVQWLBbSuIdLX" Name="Input" Kind="StateInputPin" />
             <Pin Id="FNG5r3Hw9IOLpeLWKMjgAE" Name="Threshold" Kind="InputPin" />
@@ -794,7 +794,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="1300,342,93,22" Id="HaWw5PqUjaKQPVdVb9r43R">
-            <p:NodeReference LastCategoryFullName="DemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="AddValue" />
               <CategoryReference Kind="AssemblyCategory" Name="MyDataTypeWithEvents" NeedsToBeDirectParent="true" />
@@ -811,7 +811,7 @@
           </Pad>
           <Pad Id="T8xxWTt1IzJNVSBjmxho4N" Comment="Result" Bounds="1390,420,45,19" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="1588,532,107,13" Id="CiBnBEcOoplNTSLQQ9NjII">
-            <p:NodeReference LastCategoryFullName="DemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="AnyValueChanged" />
             </p:NodeReference>
@@ -839,7 +839,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="1340,530,110,13" Id="Lc5XKs7VFjrQVfSH80Mb40">
-            <p:NodeReference LastCategoryFullName="DemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.MyDataTypeWithEvents" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="AnyValueExceeded" />
             </p:NodeReference>
@@ -887,14 +887,16 @@
                 <Pin Id="CnsO6AHhCFmNTF0BYcYjfa" Name="Not Assigned" Kind="OutputPin" />
               </Node>
               <Node Bounds="1896,642,122,84" Id="UnnfDKmFNgfPiHv97DhgEM">
-                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                   <Choice Kind="ApplicationStatefulRegion" Name="If" />
                   <FullNameCategoryReference ID="Primitive" />
                 </p:NodeReference>
                 <Pin Id="NriOfKcHKpkMGx1Zk7XllN" Name="Condition" Kind="InputPin" />
+                <ControlPoint Id="P1WnOTaF2JtOXfOVTxblEU" Bounds="1999,721" Alignment="Bottom" />
+                <ControlPoint Id="UCWxcxDWbMVOxQDoqZzAzi" Bounds="1987,649" Alignment="Top" />
                 <Patch Id="AD91AkY6pDzOBii06yxQBg" ManuallySortedPins="true">
                   <Node Bounds="1908,673,92,22" Id="Q2p5KJTSFXhK91ehvMGoPI">
-                    <p:NodeReference LastCategoryFullName="DemoLib.MyGenericEventArgs`1" LastSymbolSource="VL.DemoLib.dll">
+                    <p:NodeReference LastCategoryFullName="DemoLib.MyGenericEventArgs`1" LastSymbolSource="VL.DemoLib_CSharp.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="Value" />
                       <CategoryReference Kind="AssemblyCategory" Name="MyGenericEventArgs`1" NeedsToBeDirectParent="true" />
@@ -906,8 +908,6 @@
                   <Patch Id="JaP6qHWbsSPLaSKO1WPU6B" Name="Create" />
                   <Patch Id="SBrnY7wTutlOBAOuxFsXMM" Name="Then" />
                 </Patch>
-                <ControlPoint Id="P1WnOTaF2JtOXfOVTxblEU" Bounds="1999,721" Alignment="Bottom" />
-                <ControlPoint Id="UCWxcxDWbMVOxQDoqZzAzi" Bounds="1987,649" Alignment="Top" />
               </Node>
               <Link Id="FBDAKqounSAQDn0xg0EKtv" Ids="NeLbVNaBtL4LmmpRQgmdT5,K6vnOPT1so5QRhecNUKQtn" />
               <Link Id="CAPSJfX8C20OQM3EQXujjT" Ids="NeLbVNaBtL4LmmpRQgmdT5,Ove5YaxZPCLPgi0l5opNgL" />
@@ -951,7 +951,7 @@
           <Pad Id="LARp4PAnK8zOIF5pfnWa3Q" SlotId="HMOSYmbKmtqNRYfZgLCrtH" Bounds="1652,201" />
           <Pad Id="L4GBA06wKEJQb3jMH0clXk" SlotId="HMOSYmbKmtqNRYfZgLCrtH" Bounds="1883,210" />
           <Node Bounds="503,973,65,22" Id="AMMuFOHoeM0OdnVaX3IfLn">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
               <FullNameCategoryReference ID="Primitive" />
@@ -975,7 +975,7 @@
             </Patch>
           </Node>
           <Node Bounds="323,283,70,19" Id="I6pyMgqrW0RP6oSpEQbBJK">
-            <p:NodeReference LastCategoryFullName="DemoLib.SomeEnumNodes" LastSymbolSource="VL.DemoLib.dll">
+            <p:NodeReference LastCategoryFullName="DemoLib.SomeEnumNodes" LastSymbolSource="VL.DemoLib_CSharp.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="StaticItalienEnumDemo" />
             </p:NodeReference>
@@ -1190,4 +1190,5 @@
       </Patch>
     </Node>
   </Patch>
+  <PlatformDependency Id="HSWuIgMW6FgM9G6uLuiF5s" Location="./VL.DemoLib_CSharp/bin/Debug/net472/VL.DemoLib_CSharp.dll" />
 </Document>

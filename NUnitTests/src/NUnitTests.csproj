@@ -15,8 +15,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="VL.Meta.Gamma" Version="2020.2.0" />
-    <PackageReference Include="VL.TestLib" Version="2020.2.0" />
+    <PackageReference Include="VL.Meta.Gamma" Version="2020.2.1" />
+    <PackageReference Include="VL.TestLib" Version="2020.2.1" />
   </ItemGroup>
   <ItemGroup>
     <PackageFile Include="*.vl" />

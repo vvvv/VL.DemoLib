@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "VL.DemoLib": {
-      "commandName": "Executable",
-      "executablePath": "C:\\Program Files\\vvvv\\vvvv_gamma_2020.2.0\\vvvv.exe"
-    }
-  }
-}
