@@ -25,6 +25,8 @@ namespace MyTests
 
         };
 
+        // DO YOU WANT TO SAVE THE VL DOCS TO DISK? 
+        static bool SaveDocuments = true;
 
 
         public static IEnumerable<string> NormalPatches()
@@ -88,10 +90,14 @@ namespace MyTests
 
             // Check dependenices
             foreach (var dep in document.GetDocSymbols().Dependencies)
-                Assert.IsFalse(dep.RemoteSymbolSource is Dummy, $"Couldn't find dependency {dep}. Press F6 to build all library projects!");
+                Assert.IsFalse(dep.RemoteSymbolSource is Dummy, $"Couldn't find dependency {dep}");
 
             // Check all containers and process node definitions, including application entry point
             CheckNodes(document.AllTopLevelDefinitions);
+
+            if (SaveDocuments)
+                // Save the document
+                document.Save(isTrusted: false); // TODO: discuss when this can be turned on.
         }
 
         static Solution Compile(IEnumerable<string> docs)
