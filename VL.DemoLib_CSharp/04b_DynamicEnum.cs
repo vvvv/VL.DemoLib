@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
-using System.Linq;
-using System.Reactive.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using VL.Lib.Collections;
 using VL.Core;
+using VL.Core.CompilerServices;
 
 namespace DemoLib
 {
@@ -58,7 +52,7 @@ namespace DemoLib
         {
         }
 
-        //this method needs to be imported in VL to set the default
+        [CreateDefault]
         public static MyEnum CreateDefault()
         {
             //use method of base class if nothing special required

@@ -1,57 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" LanguageVersion="2020.2.1.268" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2020.2.0" />
-  <NugetDependency Id="NWLjRwKUHOHQYPwzYLQOAW" Location="VL.Lang" Version="2020.2.0" />
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" LanguageVersion="2021.4.12.1374" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2021.4.12" />
+  <NugetDependency Id="NWLjRwKUHOHQYPwzYLQOAW" Location="VL.Lang" Version="2021.4.12" />
   <PlatformDependency Id="FUL9gXSHbmfLBOrRfj2qbA" Location="System.Windows.Forms" />
   <PlatformDependency Id="QNptdMZnVaNLRQASl9FhDd" Location="System.Drawing" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.Value" CanvasType="FullCategory">
-      <!--
-
-    ************************ MyEnum ************************
-
--->
-      <Node Name="MyEnum" Bounds="525,174" Id="PZhn4gXOSe3Oc2I6H22fXo">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <FullNameCategoryReference ID="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="DemoLib" LastSymbolSource="VL.DemoLib.dll">
-          <FullNameCategoryReference ID="DemoLib" />
-          <Choice Kind="ClassType" Name="MyEnum" />
-        </p:TypeAnnotation>
-        <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
-        <Patch Id="NPM7t7kKtRsLhYZ824BbX2">
-          <Canvas Id="CZdvw5IcMMpOlu3bH0vE54" CanvasType="Group">
-            <!--
-
-    ************************ CreateDefault ************************
-
--->
-            <Node Name="CreateDefault" Bounds="279,185,97,80" Id="BUSlMtwK5gTMZv7srFFqF3">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <FullNameCategoryReference ID="Primitive" />
-              </p:NodeReference>
-              <Patch Id="G9DBzJ9mfY5O79PCh01zLe" ManuallySortedPins="true">
-                <Node Bounds="291,220,73,13" AutoConnect="true" Id="BiZkpLiJUVwPECa2NaoQ47">
-                  <p:NodeReference LastCategoryFullName="DemoLib.MyEnum" LastSymbolSource="VL.DemoLib_CSharp.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="DemoLib" />
-                    <CategoryReference Kind="AssemblyCategory" Name="MyEnum" />
-                    <Choice Kind="OperationCallFlag" Name="CreateDefault" />
-                  </p:NodeReference>
-                  <Pin Id="BIMdas148iFOKGIeD26jPZ" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Pin Id="TJu0aI7wQzDLLmqVtAPjPk" Name="Result" Kind="OutputPin" />
-              </Patch>
-            </Node>
-          </Canvas>
-          <ProcessDefinition Id="Kynwf6tQi5aOfzYQrTU7eP" IsHidden="true">
-            <Fragment Id="KHCCE6JIsKaNvUAhkQq6MG" Patch="BUSlMtwK5gTMZv7srFFqF3" Enabled="true" />
-          </ProcessDefinition>
-        </Patch>
-      </Node>
       <!--
 
     ************************ MyWindow ************************
@@ -185,7 +139,7 @@
                 <Choice Kind="OperationCallFlag" Name="FromSeconds" />
               </p:NodeReference>
               <Pin Id="TYVAfvzOrhDPJPzfKGQ24F" Name="Value" Kind="InputPin" DefaultValue="0.5">
-                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Float64" />
                 </p:TypeAnnotation>
               </Pin>
@@ -222,6 +176,11 @@
                   <p:NodeReference LastCategoryFullName="VL.ISolution" LastSymbolSource="VL.Lang.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="SetPinValue" />
+                    <PinReference Kind="InputPin" Name="Node">
+                      <p:DataTypeReference p:Type="TypeReference">
+                        <Choice Kind="TypeFlag" Name="Integer32 (Unsigned)" />
+                      </p:DataTypeReference>
+                    </PinReference>
                   </p:NodeReference>
                   <Pin Id="KS3aItlSfK8MLLZHI5805r" Name="Input" Kind="StateInputPin" />
                   <Pin Id="EaiV034V3QMQUkVgDkpLI6" Name="Node" Kind="InputPin" />
@@ -292,6 +251,16 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="NodePath" />
                 <Choice Kind="OperationCallFlag" Name="Stack" />
+                <PinReference Kind="OutputPin" Name="Stack">
+                  <p:DataTypeReference p:Type="TypeReference">
+                    <Choice Kind="TypeFlag" Name="Stack" />
+                    <p:TypeArguments>
+                      <TypeReference>
+                        <Choice Kind="TypeFlag" Name="Integer32 (Unsigned)" />
+                      </TypeReference>
+                    </p:TypeArguments>
+                  </p:DataTypeReference>
+                </PinReference>
               </p:NodeReference>
               <Pin Id="EZFXwdbZngeOgQvZtjf2V7" Name="Input" Kind="StateInputPin" />
               <Pin Id="VeEYH0iS1r9L7jfne2Is2s" Name="Output" Kind="StateOutputPin" />
@@ -383,15 +352,6 @@
           <ProcessDefinition Id="OtO8uodSvcCOikYktLThwi" IsHidden="true" />
         </Patch>
       </Node>
-      <Pad Id="UMxSqX3gwSUQKcjwZx7osz" Bounds="509,111,111,19" ShowValueBox="true" isIOBox="true" Value="dynamic enums">
-        <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-          <Choice Kind="TypeFlag" Name="String" />
-        </p:TypeAnnotation>
-        <p:ValueBoxSettings>
-          <p:fontsize p:Type="Int32">9</p:fontsize>
-          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-        </p:ValueBoxSettings>
-      </Pad>
       <Pad Id="VBjb8A1Hl6XL7vPQvDGMFd" Bounds="345,103,86,19" ShowValueBox="true" isIOBox="true" Value="static enums">
         <p:TypeAnnotation>
           <Choice Kind="TypeFlag" Name="String" />
@@ -541,6 +501,7 @@
             </p:NodeReference>
             <Pin Id="QsVb1Cq7WfiMVfHyafxWRV" Name="Center" Kind="InputPin" />
             <Pin Id="TxbZfxhWrAfO5YYt8L6lJj" Name="Width" Kind="InputPin" />
+            <Pin Id="FdDxd6xjEkDPzVN3jjIW0l" Name="Alignment" Kind="InputPin" />
             <Pin Id="RhmanFsVJcnMW5eJxX6XWZ" Name="Phase" Kind="InputPin" />
             <Pin Id="LILQFmSiz5jMSI4XxSraLD" Name="Count" Kind="InputPin" />
             <Pin Id="NL80LflRVuuMKlgotE2rAU" Name="Output" Kind="OutputPin" />
